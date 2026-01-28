@@ -27,7 +27,7 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
       {/* Hero Section */}
       <section id="hero" className="py-20 flex flex-col items-start max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
         <h2 className={`text-4xl md:text-7xl font-bold leading-tight tracking-tight mb-8 ${isDarkMode ? 'text-white' : 'text-black'}`}>
-          Communication designer weaving <span className="text-neutral-500">meaningful narratives</span> through visual form.
+          Communication designer Designing<span className="text-neutral-500">intuitive experiences</span> through logic, structure, and visual storytelling.
         </h2>
         <p className={`text-lg md:text-xl leading-relaxed max-w-2xl mb-12 ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
           Hi, I'm Sudena. I specialize in UI/UX, branding, and editorial design. Currently exploring the intersection of digital experience and human-centric strategy.
