@@ -66,6 +66,12 @@ export const PROJECTS: Project[] = [
         title: 'High-Fidelity Wireframes',
         image: 'https://picsum.photos/seed/proc5/800/600',
         description: 'Applying a clean, accessible aesthetic to complex marketplace screens.'
+      },
+      {
+        id: 'p5',
+        title: 'High-Fidelity Wireframes',
+        image: 'https://picsum.photos/seed/proc5/800/600',
+        description: 'Applying a clean, accessible aesthetic to complex marketplace screens.'
       }
     ]
   },
