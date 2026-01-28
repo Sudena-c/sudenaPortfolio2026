@@ -5,6 +5,7 @@ import { CATEGORIES, SKILLS } from '../constants';
 import ProjectCard from './ProjectCard';
 import FilterBar from './FilterBar';
 import ContactForm from './ContactForm';
+import ProfileInfo from './ProfileInfo';
 import { User, Code, Briefcase } from 'lucide-react';
 
 interface HomeProps {
@@ -134,7 +135,7 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="scroll-mt-24 pb-20">
+      <section id="contact" className="scroll-mt-24">
         <div className="max-w-2xl mx-auto text-center space-y-12">
           <div className="space-y-4">
             <h3 className="text-4xl font-bold">Get in touch</h3>
@@ -145,6 +146,9 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
           <ContactForm isDarkMode={isDarkMode} />
         </div>
       </section>
+
+      {/* Designer Info Section */}
+      <ProfileInfo isDarkMode={isDarkMode} />
     </div>
   );
 };

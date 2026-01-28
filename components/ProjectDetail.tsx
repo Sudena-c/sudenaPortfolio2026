@@ -1,7 +1,8 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Project } from '../types';
 import { ArrowLeft, Clock, Wrench, Layout } from 'lucide-react';
+import Lightbox from './Lightbox';
 
 interface ProjectDetailProps {
   project: Project;
@@ -10,8 +11,20 @@ interface ProjectDetailProps {
 }
 
 const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMode }) => {
+  const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
+
   return (
     <div className="animate-in fade-in slide-in-from-right-8 duration-700">
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <Lightbox 
+          src={selectedImage.src} 
+          alt={selectedImage.alt} 
+          onClose={() => setSelectedImage(null)} 
+          isDarkMode={isDarkMode}
+        />
+      )}
+
       {/* Header Info */}
       <div className="max-w-4xl mb-16">
         <button 
@@ -64,8 +77,14 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
       </div>
 
       {/* Cover Image */}
-      <div className="rounded-2xl overflow-hidden mb-24 aspect-[21/9]">
-        <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover" />
+      <div 
+        className="rounded-2xl overflow-hidden mb-24 aspect-[21/9] cursor-zoom-in group relative"
+        onClick={() => setSelectedImage({ src: project.coverImage, alt: project.title })}
+      >
+        <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Click to expand</span>
+        </div>
       </div>
 
       {/* Process Section */}
@@ -82,8 +101,14 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
                 {step.description}
               </p>
             </div>
-            <div className={`rounded-xl overflow-hidden ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}>
-              <img src={step.image} alt={step.title} className="w-full h-auto object-cover hover:scale-105 transition-transform duration-1000" />
+            <div 
+              className={`rounded-xl overflow-hidden cursor-zoom-in group relative ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}
+              onClick={() => setSelectedImage({ src: step.image, alt: step.title })}
+            >
+              <img src={step.image} alt={step.title} className="w-full h-auto object-cover group-hover:scale-[1.05] transition-transform duration-1000" />
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
+              </div>
             </div>
           </div>
         ))}
