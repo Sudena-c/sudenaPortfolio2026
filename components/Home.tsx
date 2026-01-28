@@ -1,12 +1,12 @@
 
 import React, { useState, useMemo } from 'react';
-import { Project, Category } from '../types';
-import { CATEGORIES, SKILLS } from '../constants';
-import ProjectCard from './ProjectCard';
-import FilterBar from './FilterBar';
-import ContactForm from './ContactForm';
-import ProfileInfo from './ProfileInfo';
-import { User, Code, Briefcase } from 'lucide-react';
+import { Project, Category } from '../types.ts';
+import { CATEGORIES } from '../constants.tsx';
+import ProjectCard from './ProjectCard.tsx';
+import FilterBar from './FilterBar.tsx';
+import ContactForm from './ContactForm.tsx';
+import ProfileInfo from './ProfileInfo.tsx';
+import { User, Briefcase } from 'lucide-react';
 
 interface HomeProps {
   projects: Project[];
@@ -30,7 +30,7 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
           Communication designer weaving <span className="text-neutral-500">meaningful narratives</span> through visual form.
         </h2>
         <p className={`text-lg md:text-xl leading-relaxed max-w-2xl mb-12 ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
-          Hi, I'm Sudena. I specialize in typography, visual identity, and UX/UI. Currently exploring the intersection of brutalist aesthetics and human-centric design.
+          Hi, I'm Sudena. I specialize in UI/UX, branding, and editorial design. Currently exploring the intersection of digital experience and human-centric strategy.
         </p>
         <a 
           href="#projects" 
@@ -62,7 +62,7 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
           <div className="order-1 md:order-2">
             <div className={`aspect-square rounded-2xl overflow-hidden bg-neutral-200 ${isDarkMode ? 'bg-neutral-900' : 'bg-neutral-100'}`}>
               <img 
-                src="https://picsum.photos/seed/sudena/800/800" 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" 
                 alt="Sudena" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
@@ -99,37 +99,6 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
               onClick={() => onProjectClick(project)} 
               isDarkMode={isDarkMode}
             />
-          ))}
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section id="skills" className="scroll-mt-24">
-        <h3 className="text-3xl font-bold flex items-center gap-3 mb-12">
-          <Code size={28} className="text-neutral-500" />
-          Proficiencies
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {(['Design', 'Software', 'Soft Skills'] as const).map((cat) => (
-            <div key={cat} className="space-y-6">
-              <h4 className="text-xl font-semibold opacity-60 uppercase tracking-widest text-sm">{cat}</h4>
-              <div className="space-y-6">
-                {SKILLS.filter(s => s.category === cat).map(skill => (
-                  <div key={skill.name} className="space-y-2">
-                    <div className="flex justify-between text-sm font-medium">
-                      <span>{skill.name}</span>
-                      <span className="opacity-50">{skill.proficiency}%</span>
-                    </div>
-                    <div className={`h-1 w-full rounded-full overflow-hidden ${isDarkMode ? 'bg-neutral-800' : 'bg-neutral-200'}`}>
-                      <div 
-                        className={`h-full transition-all duration-1000 ${isDarkMode ? 'bg-white' : 'bg-black'}`}
-                        style={{ width: `${skill.proficiency}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           ))}
         </div>
       </section>

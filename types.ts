@@ -1,5 +1,5 @@
 
-export type Category = 'All' | 'Typography' | 'Branding' | 'UX/UI' | 'Motion Graphics';
+export type Category = 'All' | 'UI/UX' | 'Editorial/Print Design' | 'Branding' | 'Web Development' | 'Digital Marketing' | 'Illustration';
 
 export interface ProcessStep {
   id: string;

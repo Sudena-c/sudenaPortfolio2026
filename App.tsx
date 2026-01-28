@@ -1,10 +1,10 @@
 
-import React, { useState, useEffect, useMemo } from 'react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import ProjectDetail from './components/ProjectDetail';
-import { Project } from './types';
-import { PROJECTS } from './constants';
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar.tsx';
+import Home from './components/Home.tsx';
+import ProjectDetail from './components/ProjectDetail.tsx';
+import { Project } from './types.ts';
+import { PROJECTS } from './constants.tsx';
 
 const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);

@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { Project } from '../types';
+import { Project } from '../types.ts';
 import { ArrowLeft, Clock, Wrench, Layout } from 'lucide-react';
-import Lightbox from './Lightbox';
+import Lightbox from './Lightbox.tsx';
 
 interface ProjectDetailProps {
   project: Project;

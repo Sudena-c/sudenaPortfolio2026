@@ -1,155 +1,114 @@
 
-import { Project, Skill, Category } from './types';
+import { Project, Category } from './types.ts';
 
-export const CATEGORIES: Category[] = ['All', 'Typography', 'Branding', 'UX/UI', 'Motion Graphics'];
-
-export const SKILLS: Skill[] = [
-  { name: 'Adobe Illustrator', proficiency: 95, category: 'Software' },
-  { name: 'Figma', proficiency: 90, category: 'Software' },
-  { name: 'After Effects', proficiency: 80, category: 'Software' },
-  { name: 'Visual Identity', proficiency: 90, category: 'Design' },
-  { name: 'Layout Design', proficiency: 85, category: 'Design' },
-  { name: 'Wireframing', proficiency: 88, category: 'Design' },
-  { name: 'Project Management', proficiency: 75, category: 'Soft Skills' },
-  { name: 'Strategic Communication', proficiency: 85, category: 'Soft Skills' },
-];
+export const CATEGORIES: Category[] = ['All', 'UI/UX', 'Editorial/Print Design', 'Branding', 'Web Development', 'Digital Marketing', 'Illustration'];
 
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Type & Tensions',
-    category: 'Typography',
-    description: 'An exploration of brutalist typography in digital layouts.',
-    longDescription: 'This project investigates the relationship between negative space and oversized letterforms. By breaking traditional grid systems, I explored how tension can be created through scale and overlap, leading to a unique visual language for contemporary editorial design.',
-    coverImage: 'https://picsum.photos/seed/type1/1200/800',
-    year: '2024',
-    tools: ['Adobe Illustrator', 'InDesign'],
+    title: 'EcoLoop App',
+    category: 'UI/UX',
+    description: 'A circular economy marketplace for university students.',
+    longDescription: 'EcoLoop addresses the waste generated on university campuses. It facilitates easy item exchange and recycling through a gamified interface that rewards sustainable behavior.',
+    coverImage: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop',
+    year: '2023',
+    tools: ['Figma', 'Protopie'],
     process: [
       {
         id: 'p1',
-        title: 'Initial Research',
-        image: 'https://picsum.photos/seed/proc1/800/600',
-        description: 'Analyzing classic Swiss design and modern brutalist movements.'
-      },
-      {
-        id: 'p2',
-        title: 'Sketching Phase',
-        image: 'https://picsum.photos/seed/proc2/800/600',
-        description: 'Iterating on glyph distortions and spatial arrangements.'
-      },
-      {
-        id: 'p3',
-        title: 'Final Composition',
-        image: 'https://picsum.photos/seed/proc3/800/600',
-        description: 'Refining weights and ensuring legibility despite radical styling.'
+        title: 'User Research',
+        image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop',
+        description: 'Analyzing campus waste patterns and student trade habits.'
       }
     ]
   },
   {
     id: '2',
-    title: 'MealMate App',
-    category: 'UX/UI',
-    description: 'A circular economy marketplace for university students.',
-    longDescription: 'EcoLoop addresses the waste generated on university campuses. It facilitates easy item exchange and recycling through a gamified interface that rewards sustainable behavior.',
-    coverImage: 'https://picsum.photos/seed/ux1/1200/800',
-    year: '2023',
-    tools: ['Figma', 'Protopie'],
-    process: [
-      {
-        id: 'p4',
-        title: 'User Flows',
-        image: 'https://picsum.photos/seed/proc4/800/600',
-        description: 'Mapping the journey from listing an item to completion of trade.'
-      },
-      {
-        id: 'p5',
-        title: 'High-Fidelity Wireframes',
-        image: 'https://picsum.photos/seed/proc5/800/600',
-        description: 'Applying a clean, accessible aesthetic to complex marketplace screens.'
-      },
-      {
-        id: 'p5',
-        title: 'High-Fidelity Wireframes',
-        image: 'https://picsum.photos/seed/proc5/800/600',
-        description: 'Applying a clean, accessible aesthetic to complex marketplace screens.'
-      }
-    ]
-  },
-  {
-    id: '3',
-    title: 'Kinetic Rhythm',
-    category: 'Motion Graphics',
-    description: 'Translating auditory beats into visual geometry.',
-    longDescription: 'A 60-second animation project where sound design and motion are intrinsically linked. Each shape follows a specific instrument, creating a synesthetic experience.',
-    coverImage: 'https://picsum.photos/seed/motion1/1200/800',
-    year: '2024',
-    tools: ['After Effects', 'Ableton Live'],
-    process: [
-      {
-        id: 'p6',
-        title: 'Storyboard',
-        image: 'https://picsum.photos/seed/proc6/800/600',
-        description: 'Keyframe planning for synchronization with audio peaks.'
-      }
-    ]
-  },
-  {
-    id: '4',
-    title: 'Noir Coffee Brand',
-    category: 'Branding',
-    description: 'Visual identity for a boutique dark-roast coffee shop.',
-    longDescription: 'Noir Coffee aims for an upscale, mysterious vibe. The branding uses deep textures and minimalist gold foil accents to communicate premium quality.',
-    coverImage: 'https://picsum.photos/seed/brand1/1200/800',
-    year: '2023',
-    tools: ['Adobe Illustrator', 'Photoshop'],
-    process: [
-      {
-        id: 'p7',
-        title: 'Logo Marks',
-        image: 'https://picsum.photos/seed/proc7/800/600',
-        description: 'Developing a signature icon that represents the roasted bean.'
-      },
-      {
-        id: 'p8',
-        title: 'Mockups',
-        image: 'https://picsum.photos/seed/proc8/800/600',
-        description: 'Testing the identity on packaging, signage, and merchandise.'
-      }
-    ]
-  },
-  {
-    id: '5',
     title: 'Flow Magazine',
-    category: 'Typography',
+    category: 'Editorial/Print Design',
     description: 'Editorial layout for an avant-garde design publication.',
     longDescription: 'Flow Magazine focuses on the "movement" of design. The layout reflects this through fluid grids and expressive typography that leads the reader through articles.',
-    coverImage: 'https://picsum.photos/seed/type2/1200/800',
+    coverImage: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1200&auto=format&fit=crop',
     year: '2024',
     tools: ['InDesign', 'Lightroom'],
     process: [
       {
-        id: 'p9',
+        id: 'p2',
         title: 'Grid Logic',
-        image: 'https://picsum.photos/seed/proc9/800/600',
+        image: 'https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=800&auto=format&fit=crop',
         description: 'Establishing a flexible 12-column grid for dynamic content.'
       }
     ]
   },
   {
-    id: '6',
-    title: 'ZenTask UI',
-    category: 'UX/UI',
-    description: 'Minimalist task manager focused on cognitive load reduction.',
-    longDescription: 'ZenTask is designed for neurodivergent users who struggle with visual clutter. It uses a focus-mode interface to minimize distractions.',
-    coverImage: 'https://picsum.photos/seed/ux2/1200/800',
-    year: '2024',
-    tools: ['Figma'],
+    id: '3',
+    title: 'Noir Coffee Brand',
+    category: 'Branding',
+    description: 'Visual identity for a boutique dark-roast coffee shop.',
+    longDescription: 'Noir Coffee aims for an upscale, mysterious vibe. The branding uses deep textures and minimalist gold foil accents to communicate premium quality.',
+    coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop',
+    year: '2023',
+    tools: ['Adobe Illustrator', 'Photoshop'],
     process: [
       {
-        id: 'p10',
-        title: 'Research',
-        image: 'https://picsum.photos/seed/proc10/800/600',
-        description: 'Conducting interviews with users to identify pain points in typical task apps.'
+        id: 'p3',
+        title: 'Visual Identity',
+        image: 'https://images.unsplash.com/photo-1525184990524-2d6eb5321b55?q=80&w=800&auto=format&fit=crop',
+        description: 'Developing a signature icon that represents the roasted bean.'
+      }
+    ]
+  },
+  {
+    id: '4',
+    title: 'Portfolio Engine',
+    category: 'Web Development',
+    description: 'A custom CMS built for digital artists and designers.',
+    longDescription: 'A high-performance web platform designed to handle large media assets while maintaining a minimalist aesthetic and lightning-fast load times.',
+    coverImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
+    year: '2024',
+    tools: ['React', 'Next.js', 'Tailwind'],
+    process: [
+      {
+        id: 'p4',
+        title: 'System Architecture',
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop',
+        description: 'Mapping the data flow between the CMS and the frontend.'
+      }
+    ]
+  },
+  {
+    id: '5',
+    title: 'Social Growth Strategy',
+    category: 'Digital Marketing',
+    description: 'Campaign design for a sustainable tech startup.',
+    longDescription: 'A comprehensive digital marketing strategy focused on organic community building and data-driven content creation across social platforms.',
+    coverImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
+    year: '2023',
+    tools: ['Google Analytics', 'FB Ads Manager'],
+    process: [
+      {
+        id: 'p5',
+        title: 'Audience Analysis',
+        image: 'https://images.unsplash.com/photo-1551288049-bbbda536639a?q=80&w=800&auto=format&fit=crop',
+        description: 'Identifying key demographics and interest clusters for targeted reach.'
+      }
+    ]
+  },
+  {
+    id: '6',
+    title: 'Organic Patterns',
+    category: 'Illustration',
+    description: 'A series of vector illustrations inspired by biological structures.',
+    longDescription: 'This series explores the microscopic patterns found in plant cells and translates them into vibrant, modern vector compositions.',
+    coverImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
+    year: '2024',
+    tools: ['Procreate', 'Adobe Illustrator'],
+    process: [
+      {
+        id: 'p6',
+        title: 'Form Exploration',
+        image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop',
+        description: 'Sketching initial shapes and testing color palettes.'
       }
     ]
   }
