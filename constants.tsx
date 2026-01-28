@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '2',
-    title: 'EcoLoop App',
+    title: 'MealMate App',
     category: 'UX/UI',
     description: 'A circular economy marketplace for university students.',
     longDescription: 'EcoLoop addresses the waste generated on university campuses. It facilitates easy item exchange and recycling through a gamified interface that rewards sustainable behavior.',
