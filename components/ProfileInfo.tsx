@@ -23,7 +23,9 @@ const ProfileInfo: React.FC<ProfileInfoProps> = ({ isDarkMode }) => {
               Sudena is a Communication Design student with a passion for narrative-driven aesthetics. Her work often explores the delicate balance between structural rigidity and organic expression.
             </p>
             <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
-              Based in the creative hub of the city, she actively collaborates with local startups and cultural organizations to bring fresh visual perspectives to the market.
+              When I'm not designing, you'll probably find me dancing in the air, sketching in a notebook, capturing a 
+              fleeting moment with my camera, or listening to my favorite songs. I also 
+              like cooking from time to time. These hobbies keep me curious, energized, and creatively inspired.
             </p>
           </div>
 
@@ -32,11 +34,11 @@ const ProfileInfo: React.FC<ProfileInfoProps> = ({ isDarkMode }) => {
             <div className="space-y-3">
               <a href="mailto:hello@sudena.design" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
                 <Mail size={20} className="text-neutral-500" />
-                <span className="text-lg font-medium">hello@sudena.design</span>
+                <span className="text-lg font-medium">sudena.swork@gmail.com</span>
               </a>
               <a href="tel:+1234567890" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
                 <Phone size={20} className="text-neutral-500" />
-                <span className="text-lg font-medium">+1 (234) 567-890</span>
+                <span className="text-lg font-medium">+91 7016016528</span>
               </a>
             </div>
           </div>

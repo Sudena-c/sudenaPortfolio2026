@@ -52,10 +52,10 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
             </h3>
             <div className={`space-y-4 text-lg ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
               <p>
-                My design philosophy is rooted in clarity and emotional resonance. As a Communication Design student, I've spent the last few years refining my ability to distill complex ideas into simple, impactful visuals.
-              </p>
-              <p>
-                Whether it's the precise kerning of a typeface or the smooth transition of a user flow, I believe that every detail counts. I am constantly curious about how visual communication influences social behavior and culture.
+                I'm a passionate designer with a keen eye for detail and a love for creating meaningful work. 
+                What began as a confusion between marketing and design soon became a fascination — leading me to 
+                explore how ideas connect, communicate, and influence. My curiosity about how things work, paired 
+                with a research-driven mindset, has shaped a career focused on solving problems through thoughtful design.
               </p>
             </div>
           </div>
