@@ -77,7 +77,7 @@ export const PROJECTS: Project[] = [
     category: 'Branding',
     description: 'Visual identity for a forward-thinking EV startup.',
     longDescription: 'Rayve aims for a clean, aerodynamic, and high-energy vibe. The branding uses sharp geometric forms and neon accents to communicate performance and sustainability.',
-    coverImage: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1200&auto=format&fit=crop',
+    coverImage: 'https://i.ibb.co/4RsyvxCQ/image.png',
     year: '2023',
     tools: ['Adobe Illustrator', 'Photoshop', 'Figma'],
     process: [
@@ -107,7 +107,7 @@ export const PROJECTS: Project[] = [
     category: 'Web Development',
     description: 'A custom portfolio experience built with React and Tailwind.',
     longDescription: 'A high-performance web platform designed to handle large media assets while maintaining a minimalist aesthetic and lightning-fast load times.',
-    coverImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
+    coverImage: 'https://i.ibb.co/JRJPxD2T/Screenshot-2026-01-29-at-11-05-15-AM.png',
     year: '2024',
     tools: ['React', 'Next.js', 'VSCode', 'Vercel'],
     process: [
@@ -137,7 +137,7 @@ export const PROJECTS: Project[] = [
     category: 'Digital Marketing',
     description: 'Campaign design and market positioning for a local business.',
     longDescription: 'A comprehensive digital marketing strategy focused on organic community building and data-driven content creation across social platforms.',
-    coverImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
+    coverImage: 'https://i.ibb.co/v4hF73HL/Screenshot-2026-01-29-at-11-05-53-AM.png',
     year: '2023',
     tools: ['Google Analytics', 'FB Ads Manager'],
     process: [
@@ -167,7 +167,7 @@ export const PROJECTS: Project[] = [
     category: 'Illustration',
     description: 'A series of vector illustrations inspired by traditional folk art.',
     longDescription: 'This series explores the intricate patterns found in Warli tribal art and translates them into a modern calendar format with a minimal color palette.',
-    coverImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
+    coverImage: 'https://i.ibb.co/zVS4zwpV/Screenshot-2026-01-29-at-11-07-33-AM.png',
     year: '2024',
     tools: ['Procreate', 'Adobe Illustrator'],
     process: [
