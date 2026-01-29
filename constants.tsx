@@ -11,6 +11,7 @@ export const PROJECTS: Project[] = [
     description: 'A collaborative meal-planning platform for shared households.',
     longDescription: 'MealMate is a collaborative meal-planning platform designed for people sharing a household. Users create individual profiles by adding food preferences, dietary choices, and commonly available groceries at home. Based on this information, the platform suggests daily meal options that align with both household inventory and collective preferences.',
     coverImage: 'https://i.ibb.co/PzMM3J9q/all-screens-copy-1.jpg',
+    finalBannerImage: 'https://i.ibb.co/vx9dxxy5/Screenshot-2026-01-29-at-10-40-52-AM.png', // Moved the high-res mockup here
     year: '2025',
     tools: ['Figma'],
     process: [
@@ -30,12 +31,12 @@ export const PROJECTS: Project[] = [
         id: 'p1-insight',
         title: 'Key Insights',
         image: 'https://i.ibb.co/p6nX2KyZ/Screenshot-2026-01-29-at-10-38-31-AM.png',
-        description: 'Key Insights:Decision fatigue is not occasional — it is a daily burden, lack of visibility into available groceries intensifies decision fatigue, more choices do not reduce confusion — they increase it, shared households add a social layer to meal decisions, users want guidance, not control,health intentions often break down under decision pressure, transparency and inclusion reduce friction in shared decisions. After all of the research I started making the Information Architecture of the app.'
+        description: 'Key Insights: Decision fatigue is not occasional — it is a daily burden, lack of visibility into available groceries intensifies decision fatigue, more choices do not reduce confusion — they increase it, shared households add a social layer to meal decisions, users want guidance, not control, health intentions often break down under decision pressure, transparency and inclusion reduce friction in shared decisions. After all of the research I started making the Information Architecture of the app.'
       },
       {
         id: 'p1-3',
         title: 'Ideation & Prototyping',
-        image: 'https://i.ibb.co/vx9dxxy5/Screenshot-2026-01-29-at-10-40-52-AM.png',
+        // Removed image from here as requested
         description: 'Based on the research and the learnings, the design focused on reducing choice overload, supporting shared decision-making, and increasing visibility into available groceries. The prototype features a shared household pantry sync and a "Quick Pick" recommendation engine that suggests recipes based on what all is available, keeping in mind nutrition and preferences.'
       }
     ]

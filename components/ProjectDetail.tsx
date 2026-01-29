@@ -92,26 +92,50 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
         <h2 className="text-3xl font-bold border-l-4 border-neutral-500 pl-6">Process & Development</h2>
         
         {project.process.map((step, index) => (
-          <div key={step.id} className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${
-            index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+          <div key={step.id} className={`grid grid-cols-1 items-center gap-12 ${
+            step.image ? 'md:grid-cols-2' : 'max-w-3xl mx-auto text-center'
+          } ${
+            step.image && index % 2 !== 0 ? 'md:flex-row-reverse' : ''
           }`}>
-            <div className={index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}>
+            <div className={step.image && index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}>
               <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
               <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
                 {step.description}
               </p>
             </div>
+            {step.image && (
+              <div 
+                className={`rounded-xl overflow-hidden cursor-zoom-in group relative ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}
+                onClick={() => setSelectedImage({ src: step.image!, alt: step.title })}
+              >
+                <img src={step.image} alt={step.title} className="w-full h-auto object-cover group-hover:scale-[1.05] transition-transform duration-1000" />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+
+        {/* Optional Final Banner Image */}
+        {project.finalBannerImage && (
+          <div className="pt-8">
+            <h3 className="text-sm font-bold uppercase tracking-widest opacity-40 mb-8 text-center">Final Showcase</h3>
             <div 
-              className={`rounded-xl overflow-hidden cursor-zoom-in group relative ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}
-              onClick={() => setSelectedImage({ src: step.image, alt: step.title })}
+              className="rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-2xl"
+              onClick={() => setSelectedImage({ src: project.finalBannerImage!, alt: 'Final Outcome' })}
             >
-              <img src={step.image} alt={step.title} className="w-full h-auto object-cover group-hover:scale-[1.05] transition-transform duration-1000" />
+              <img 
+                src={project.finalBannerImage} 
+                alt="Final Design Outcome" 
+                className="w-full h-auto object-cover group-hover:scale-[1.01] transition-transform duration-700" 
+              />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
+                <span className="text-white font-medium px-6 py-3 bg-black/50 backdrop-blur-md rounded-full text-base">View Full Case Study Mockup</span>
               </div>
             </div>
           </div>
-        ))}
+        )}
       </div>
 
       {/* Next Project Suggestion */}

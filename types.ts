@@ -3,7 +3,7 @@ export type Category = 'All' | 'UI/UX' | 'Editorial/Print Design' | 'Branding' |
 
 export interface ProcessStep {
   id: string;
-  image: string;
+  image?: string; // Made optional to support text-only steps
   title: string;
   description: string;
 }
@@ -15,6 +15,7 @@ export interface Project {
   description: string;
   longDescription: string;
   coverImage: string;
+  finalBannerImage?: string; // New optional property for a large end-of-project banner
   process: ProcessStep[];
   tools: string[];
   year: string;
