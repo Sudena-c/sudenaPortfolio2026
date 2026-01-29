@@ -45,9 +45,9 @@ export const PROJECTS: Project[] = [
     id: '2',
     title: 'Coffee Table Book Design',
     category: 'Editorial/Print Design',
-    description: 'Editorial layout for an avant-garde design publication.',
-    longDescription: 'Flow Magazine focuses on the "movement" of design. The layout reflects this through fluid grids and expressive typography that leads the reader through articles.',
-    coverImage: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1200&auto=format&fit=crop',
+    description: 'Vinyl- A Timeless Sound',
+    longDescription: 'This coffee table book explores the cultural legacy of vinyl records as both a medium of sound and a symbol of timeless music. The project focuses on visual storytelling through print, combining archival imagery, editorial layouts, and narrative pacing to create a tactile reading experience.',
+    coverImage: 'https://i.ibb.co/kpV5gbD/cover-page.jpg',
     year: '2025',
     tools: ['InDesign'],
     process: [
