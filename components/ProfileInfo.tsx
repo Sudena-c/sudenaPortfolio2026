@@ -71,7 +71,7 @@ const ProfileInfo: React.FC<ProfileInfoProps> = ({ isDarkMode }) => {
             ))}
           </div>
           <div className="pt-4 text-sm opacity-40 italic">
-            Currently accepting freelance inquiries and internship opportunities for Fall 2025.
+            Currently accepting freelance inquiries and internship opportunities for Fall 2026.
           </div>
         </div>
       </div>

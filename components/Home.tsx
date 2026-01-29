@@ -62,7 +62,7 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
           <div className="order-1 md:order-2">
             <div className={`aspect-square rounded-2xl overflow-hidden bg-neutral-200 ${isDarkMode ? 'bg-neutral-900' : 'bg-neutral-100'}`}>
               <img 
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" 
+                src="https://ibb.co/SXybJnG2" 
                 alt="Sudena" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
