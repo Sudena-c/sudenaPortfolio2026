@@ -36,7 +36,6 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, onToggleTheme, onHomeClick,
             <div className="hidden md:flex items-center gap-8 text-sm font-medium">
               <a href="#about" className="hover:opacity-70 transition-opacity">About</a>
               <a href="#projects" className="hover:opacity-70 transition-opacity">Work</a>
-              <a href="#skills" className="hover:opacity-70 transition-opacity">Skills</a>
               <a href="#contact" className="hover:opacity-70 transition-opacity">Contact</a>
             </div>
           )}
