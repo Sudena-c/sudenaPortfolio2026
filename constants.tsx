@@ -77,7 +77,7 @@ export const PROJECTS: Project[] = [
     category: 'Branding',
     description: 'Visual identity for a forward-thinking EV startup.',
     longDescription: 'Rayve aims for a clean, aerodynamic, and high-energy vibe. The branding uses sharp geometric forms and neon accents to communicate performance and sustainability.',
-    coverImage: 'https://i.ibb.co/4RsyvxCQ/image.png',
+    coverImage: 'https://i.ibb.co/DHRYgS77/Free-Billboard-Mockup-2nd-draft-blue-copy.jpg',
     year: '2023',
     tools: ['Adobe Illustrator', 'Photoshop', 'Figma'],
     process: [
