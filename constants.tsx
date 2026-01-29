@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
     category: 'UI/UX',
     description: 'A circular economy marketplace for university students.',
     longDescription: 'EcoLoop addresses the waste generated on university campuses. It facilitates easy item exchange and recycling through a gamified interface that rewards sustainable behavior.',
-    coverImage: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop',
+    coverImage: 'https://i.ibb.co/PzMM3J9q/all-screens-copy-1.jpg',
     year: '2025',
     tools: ['Figma'],
     process: [
