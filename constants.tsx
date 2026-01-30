@@ -54,14 +54,15 @@ export const PROJECTS: Project[] = [
       {
         id: 'p2-1',
         title: 'Research',
-        image: 'https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=800&auto=format&fit=crop',
-        description: 'Establishing a flexible 12-column grid for dynamic content.'
+
+        description: 'Researched on different kinds of coffee table books, the different grids they use, the kinds of content they are made of and the relevance behind them.'
       },
       {
         id: 'p2-2',
-        title: 'Grids',
-        image: 'https://images.unsplash.com/photo-1509023467864-1ecbb3f636c8?q=80&w=800&auto=format&fit=crop',
-        description: 'Iterating through multiple grid systems to find the balance between readability and artistic expression.'
+        title: 'History and Relevance of Vinyl',
+        image: 'https://i.ibb.co/hFy3FnLq/importance-in-digital-age.jpg',
+        image: 'https://i.ibb.co/TMqrgM8M/history.jpg',
+        description: 'I focused on 3 main things through the book, two of those were the history and the importance of Vinyl in todays time.'
       },
       {
         id: 'p2-3',
