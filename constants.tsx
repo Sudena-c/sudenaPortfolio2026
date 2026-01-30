@@ -18,7 +18,6 @@ export const PROJECTS: Project[] = [
       {
         id: 'p1-intro',
         title: 'Every day, millions of people ask one small question: "What should I cook today?" That question sounds simple - but it creates stress, wasted food, and unhealthy choices.',
-        
       },
       {
         id: 'p1-1',
@@ -41,7 +40,6 @@ export const PROJECTS: Project[] = [
         id: 'p1-wireframes',
         title: 'Wireframes',
         image: 'https://i.ibb.co/Q3WLdt4S/Chat-GPT-Image-Jan-30-2026-12-18-21-PM.png'
-        // Description removed as requested for the centered layout
       },
       {
         id: 'p1-3',
@@ -98,21 +96,31 @@ export const PROJECTS: Project[] = [
       {
         id: 'p3-1',
         title: 'Logo Concept',
-        image: 'https://images.unsplash.com/photo-1525184990524-2d6eb5321b55?q=80&w=800&auto=format&fit=crop',
-        description: 'Developing a signature icon that represents kinetic energy and flow.'
+        image: 'https://i.ibb.co/chLsRy6z/image.png',
+        description: 'The RAYVE logo is a fluid and dynamic abstract mark, embodying the core essence of the brand. The sweeping, continuous teal form evokes a sense of motion and forward momentum, mirroring the effortless drive and modern design of RAYVE electric vehicles. Its graceful curves subtly hint at the harnessing of energy, like a wave drawing power, while the vibrant teal color signifies both clean energy and a refreshing, contemporary aesthetic.'
+      },
+      {
+        id: 'p3-logo-dev',
+        title: 'Logo Development',
+        image: 'https://i.ibb.co/TDnRYZcC/image.png',
+        secondaryImage: 'https://i.ibb.co/bjW7BYNs/image.png'
       },
       {
         id: 'p3-2',
-        title: 'Typography',
-        image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop',
-        description: 'Selecting a sans-serif typeface that matches the futuristic industrial design of the vehicles.'
+        title: '3D design of the Showroom using the logo',
+        image: 'https://i.ibb.co/DHQCxgzQ/image.png',
+        description: 'Designed this 3D model of the showroom and how the logo can be placed in the space.'
       },
       {
-        id: 'p3-3',
-        title: 'Mockups',
-        image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop',
-        description: 'Applying the identity to digital interfaces and physical touchpoints.'
-      }
+        id: 'p3-mockups',
+        title: 'Brand Mockups',
+        gallery: [
+          'https://i.ibb.co/F4wfc0Xt/image.png',
+          'https://i.ibb.co/9mTx0b7L/Stationery-Mockup-1-RAYVEpsd-copy.jpg',
+          'https://i.ibb.co/pj377j5J/Screenshot-2026-01-30-at-4-10-10-PM.png',
+          'https://i.ibb.co/hxPJQXnN/Screenshot-2026-01-30-at-4-17-43-PM.png'
+        ]
+      },
     ]
   },
   {

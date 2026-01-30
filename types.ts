@@ -4,8 +4,10 @@ export type Category = 'All' | 'UI/UX' | 'Editorial/Print Design' | 'Branding' |
 export interface ProcessStep {
   id: string;
   image?: string; 
+  secondaryImage?: string; // Kept for backward compatibility
+  gallery?: string[]; // New field for 3+ images
   title: string;
-  description?: string; // Changed to optional
+  description?: string;
 }
 
 export interface Project {
