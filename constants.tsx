@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
     description: 'A custom portfolio experience built with React and Tailwind.',
     longDescription: 'A high-performance web platform designed to handle large media assets while maintaining a minimalist aesthetic and lightning-fast load times.',
     coverImage: 'https://i.ibb.co/JRJPxD2T/Screenshot-2026-01-29-at-11-05-15-AM.png',
-    year: '2024',
+    year: '2024-2025',
     tools: ['React', 'Next.js', 'VSCode', 'Vercel'],
     process: [
       {
@@ -158,29 +158,46 @@ export const PROJECTS: Project[] = [
     id: '5',
     title: 'Rebranding Strategy',
     category: 'Digital Marketing',
-    description: 'Campaign design and market positioning for a local business.',
-    longDescription: 'A comprehensive digital marketing strategy focused on organic community building and data-driven content creation across social platforms.',
+    description: 'Campaign design and market positioning for an existing business.',
+    longDescription: 'Built a social media campaign for an existing brand- Tea Better after doing some in depth research on the brand, its value, and market position, leading to rebranding them.',
     coverImage: 'https://i.ibb.co/v4hF73HL/Screenshot-2026-01-29-at-11-05-53-AM.png',
-    year: '2023',
-    tools: ['Google Analytics', 'FB Ads Manager'],
+    year: '2025',
+    tools: ['Google Analytics', 'Secondary Research', 'Illustrator'],
     process: [
       {
         id: 'p5-1',
         title: 'Research',
-        image: 'https://images.unsplash.com/photo-1551288049-bbbda536639a?q=80&w=800&auto=format&fit=crop',
-        description: 'Identifying key demographics and interest clusters for targeted reach.'
+        image: 'https://i.ibb.co/gZFxTsY1/Screenshot-2026-01-30-at-7-09-12-PM.png',
+        description: 'Understanding the brands stand in the market and the brand itself.'
       },
       {
         id: 'p5-2',
         title: 'Rebranding',
-        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=800&auto=format&fit=crop',
-        description: 'Refreshing the visual language to better align with the brand’s updated values.'
+        image: 'https://i.ibb.co/v4hF73HL/Screenshot-2026-01-29-at-11-05-53-AM.png',
+        description: 'Refreshing the visual language to better align with the brands updated values and customer base.'
       },
       {
         id: 'p5-3',
         title: 'Social Media Campaign',
-        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop',
-        description: 'Executing a multi-platform content strategy focused on engagement.'
+        description: 'Designing a Social Media campaign for the brand- to make people more aware and recognize the brand for its purposes.'
+      },
+      {
+        id: 'p5-2',
+        title: 'Kitty Talk Tea Better',
+        image: 'https://i.ibb.co/xqNdKYPN/Screenshot-2026-01-30-at-6-58-54-PM.png',
+        description: 'Core Message: Make your next kitty party memorable and mindful. Swap the traditional chai for a cup of TEA BETTER—the healthier, tastier, and more Instagrammable choice that will get everyone talking. Target Platforms: Primarily Facebook and WhatsApp and Instagram, which are the most active platforms for this demographic. '
+      },
+      {
+        id: 'p5-2',
+        title: 'Tea For Thought',
+        image: 'https://i.ibb.co/35TFz5h7/Screenshot-2026-01-30-at-7-00-33-PM.png',
+        description: 'Core Message: Position TEA BETTER not just as a beverage, but as a catalyst for creativity, deep thinking, and mindfulness. A healthy but tasty option for anyone/everyone, all age groups from college going students to adults and health concernced audience. Target Platforms: Instagram (primary), Snapchat (secondary, for younger audience and behind-the-scenes), potentially LinkedIn (for professional audience).'
+      },
+      {
+        id: 'p5-2',
+        title: 'Your Daily of Better',
+        image: 'https://i.ibb.co/6JYBDFc9/Screenshot-2026-01-30-at-7-00-50-PM.png',
+        description: 'Core Message: TEA BETTER isn't just a drink; it's a simple, delicious, and natural ritual for your daily well-being. Discover a blend that benefits you, from calming your mind to boosting your immunity. Target Platforms: Instagram (primary), Snapchat (secondary- individuals snap their life and what theyre drinking), and Facebook.'
       }
     ]
   },
