@@ -11,14 +11,18 @@ export const PROJECTS: Project[] = [
     description: 'A collaborative meal-planning platform for shared households.',
     longDescription: 'MealMate is a collaborative meal-planning platform designed for people sharing a household. Users create individual profiles by adding food preferences, dietary choices, and commonly available groceries at home. Based on this information, the platform suggests daily meal options that align with both household inventory and collective preferences.',
     coverImage: 'https://i.ibb.co/PzMM3J9q/all-screens-copy-1.jpg',
-    finalBannerImage: 'https://i.ibb.co/vx9dxxy5/Screenshot-2026-01-29-at-10-40-52-AM.png', // Moved the high-res mockup here
+    finalBannerImage: 'https://i.ibb.co/vx9dxxy5/Screenshot-2026-01-29-at-10-40-52-AM.png',
     year: '2025',
     tools: ['Figma'],
     process: [
       {
+        id: 'p1-intro',
+        title: 'The Daily Dilemma',
+        description: 'Every day, millions of people ask one small question: "What should I cook today?" That question sounds simple—but it creates stress, wasted food, and unhealthy choices.'
+      },
+      {
         id: 'p1-1',
         title: 'Identifying the Problem',
-        image: 'https://i.ibb.co/M5K9rWQC/image.png',
         description: 'People living alone or in shared households often struggle to decide what to cook each day. Limited awareness of available groceries, differing food preferences, and lack of coordination between household members make daily meal decisions mentally exhausting and inefficient.'
       },
       {
@@ -31,12 +35,17 @@ export const PROJECTS: Project[] = [
         id: 'p1-insight',
         title: 'Key Insights',
         image: 'https://i.ibb.co/p6nX2KyZ/Screenshot-2026-01-29-at-10-38-31-AM.png',
-        description: 'Key Insights: Decision fatigue is not occasional — it is a daily burden, lack of visibility into available groceries intensifies decision fatigue, more choices do not reduce confusion — they increase it, shared households add a social layer to meal decisions, users want guidance, not control, health intentions often break down under decision pressure, transparency and inclusion reduce friction in shared decisions. After all of the research I started making the Information Architecture of the app.'
+        description: 'Key Insights: Decision fatigue is not occasional — it is a daily burden, lack of visibility into available groceries intensifies decision fatigue, more choices do not reduce confusion — they increase it, shared households add a social layer to meal decisions, users want guidance, not control, health intentions often break down under decision pressure, transparency and inclusion reduce friction in shared decisions.'
+      },
+      {
+        id: 'p1-wireframes',
+        title: 'Wireframes',
+        image: 'https://i.ibb.co/Q3WLdt4S/Chat-GPT-Image-Jan-30-2026-12-18-21-PM.png'
+        // Description removed as requested for the centered layout
       },
       {
         id: 'p1-3',
         title: 'Ideation & Prototyping',
-        // Removed image from here as requested
         description: 'Based on the research and the learnings, the design focused on reducing choice overload, supporting shared decision-making, and increasing visibility into available groceries. The prototype features a shared household pantry sync and a "Quick Pick" recommendation engine that suggests recipes based on what all is available, keeping in mind nutrition and preferences.'
       }
     ]
@@ -48,27 +57,26 @@ export const PROJECTS: Project[] = [
     description: 'Vinyl- A Timeless Sound',
     longDescription: 'This coffee table book explores the cultural legacy of vinyl records as both a medium of sound and a symbol of timeless music. The project focuses on visual storytelling through print, combining archival imagery, editorial layouts, and narrative pacing to create a tactile reading experience.',
     coverImage: 'https://i.ibb.co/kpV5gbD/cover-page.jpg',
+    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-vintage-record-player-spinning-a-vinyl-4554-large.mp4',
     year: '2025',
     tools: ['InDesign'],
     process: [
       {
         id: 'p2-1',
         title: 'Research',
-
         description: 'Researched on different kinds of coffee table books, the different grids they use, the kinds of content they are made of and the relevance behind them.'
       },
       {
         id: 'p2-2',
         title: 'History and Relevance of Vinyl',
         image: 'https://i.ibb.co/hFy3FnLq/importance-in-digital-age.jpg',
-        image: 'https://i.ibb.co/TMqrgM8M/history.jpg',
         description: 'I focused on 3 main things through the book, two of those were the history and the importance of Vinyl in todays time.'
       },
       {
         id: 'p2-3',
         title: 'The Book',
         image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop',
-        description: 'Final production files and physical mockup verification.'
+        description: 'This was the final book, it focuses on some of the famour records also, along with how vinyl records are made in the first place.'
       }
     ]
   },
@@ -77,11 +85,16 @@ export const PROJECTS: Project[] = [
     title: 'Rayve - Electric Car Brand',
     category: 'Branding',
     description: 'Visual identity for a forward-thinking EV startup.',
-    longDescription: 'Rayve aims for a clean, aerodynamic, and high-energy vibe. The branding uses sharp geometric forms and neon accents to communicate performance and sustainability.',
+    longDescription: 'RAYVE is a solar-powered electric vehicle brand designed for modern urban commuters who value sustainability without compromising on style or efficiency. The brand envisions everyday city travel and long travel hours where clean energy seamlessly supports mobility, reducing environmental impact while enhancing the driving experience. RAYVEs identity reflects conscious innovation—quiet, responsible, and forward-looking—built for individuals who want their daily choices to contribute to a cleaner future, with a special USP.',
     coverImage: 'https://i.ibb.co/DHRYgS77/Free-Billboard-Mockup-2nd-draft-blue-copy.jpg',
     year: '2023',
     tools: ['Adobe Illustrator', 'Photoshop', 'Figma'],
     process: [
+      {
+        id: 'p3-brand',
+        title: 'Brand: Mission, Vision, Values',
+        description: 'The brand aims to be a leading catalyst for sustainable and enjoyable urban mobility, empowering individuals to navigate their cities with ease and style. It focuses on designing, manufacturing, and delivering compact, smart electric vehicles that enhance urban life by offering a driving experience that is stylish, sustainable, and effortless. Guided by values of innovation, efficiency, independence, and tech-savvy thinking, the brand blends sustainability with modern design to create mobility solutions suited for contemporary city living.'
+      },
       {
         id: 'p3-1',
         title: 'Logo Concept',

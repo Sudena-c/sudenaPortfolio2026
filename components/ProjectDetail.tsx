@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Project } from '../types.ts';
-import { ArrowLeft, Clock, Wrench, Layout } from 'lucide-react';
+import { ArrowLeft, Clock, Wrench, Layout, PlayCircle } from 'lucide-react';
 import Lightbox from './Lightbox.tsx';
 
 interface ProjectDetailProps {
@@ -91,31 +91,60 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
       <div className="max-w-5xl mx-auto space-y-32">
         <h2 className="text-3xl font-bold border-l-4 border-neutral-500 pl-6">Process & Development</h2>
         
-        {project.process.map((step, index) => (
-          <div key={step.id} className={`grid grid-cols-1 items-center gap-12 ${
-            step.image ? 'md:grid-cols-2' : 'max-w-3xl mx-auto text-center'
-          } ${
-            step.image && index % 2 !== 0 ? 'md:flex-row-reverse' : ''
-          }`}>
-            <div className={step.image && index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}>
-              <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
-              <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
-                {step.description}
-              </p>
-            </div>
-            {step.image && (
-              <div 
-                className={`rounded-xl overflow-hidden cursor-zoom-in group relative ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}
-                onClick={() => setSelectedImage({ src: step.image!, alt: step.title })}
-              >
-                <img src={step.image} alt={step.title} className="w-full h-auto object-cover group-hover:scale-[1.05] transition-transform duration-1000" />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
+        {project.process.map((step, index) => {
+          // Special Centered Layout: Image + Title, No Description
+          const isCenteredVisual = step.image && (!step.description || step.description.trim() === "");
+
+          if (isCenteredVisual) {
+            return (
+              <div key={step.id} className="text-center space-y-12 animate-in fade-in duration-1000">
+                <h3 className="text-3xl md:text-5xl font-bold tracking-tight">{step.title}</h3>
+                <div 
+                  className="rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-xl mx-auto max-w-4xl"
+                  onClick={() => setSelectedImage({ src: step.image!, alt: step.title })}
+                >
+                  <img 
+                    src={step.image} 
+                    alt={step.title} 
+                    className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-1000" 
+                  />
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
+                  </div>
                 </div>
               </div>
-            )}
-          </div>
-        ))}
+            );
+          }
+
+          // Standard Layout
+          return (
+            <div key={step.id} className={`grid grid-cols-1 items-center gap-12 ${
+              step.image ? 'md:grid-cols-2' : 'max-w-3xl mx-auto text-center'
+            } ${
+              step.image && index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+            }`}>
+              <div className={step.image && index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}>
+                <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
+                {step.description && (
+                  <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
+                    {step.description}
+                  </p>
+                )}
+              </div>
+              {step.image && (
+                <div 
+                  className={`rounded-xl overflow-hidden cursor-zoom-in group relative ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}
+                  onClick={() => setSelectedImage({ src: step.image!, alt: step.title })}
+                >
+                  <img src={step.image} alt={step.title} className="w-full h-auto object-cover group-hover:scale-[1.05] transition-transform duration-1000" />
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
 
         {/* Optional Final Banner Image */}
         {project.finalBannerImage && (
@@ -134,6 +163,30 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
                 <span className="text-white font-medium px-6 py-3 bg-black/50 backdrop-blur-md rounded-full text-base">View Full Case Study Mockup</span>
               </div>
             </div>
+          </div>
+        )}
+
+        {/* Optional Video Showcase */}
+        {project.videoUrl && (
+          <div className="pt-16">
+            <h3 className="text-sm font-bold uppercase tracking-widest opacity-40 mb-8 text-center flex items-center justify-center gap-2">
+              <PlayCircle size={16} /> Narrative Video
+            </h3>
+            <div className={`rounded-3xl overflow-hidden shadow-2xl border ${isDarkMode ? 'border-neutral-800' : 'border-neutral-200'}`}>
+              <video 
+                src={project.videoUrl} 
+                controls 
+                muted 
+                loop 
+                playsInline
+                className="w-full h-auto max-h-[70vh] object-cover bg-black"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className={`mt-6 text-center text-sm italic ${isDarkMode ? 'text-neutral-500' : 'text-neutral-400'}`}>
+              Process Flip-through & Visual Narrative
+            </p>
           </div>
         )}
       </div>

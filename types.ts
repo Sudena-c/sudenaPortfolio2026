@@ -3,9 +3,9 @@ export type Category = 'All' | 'UI/UX' | 'Editorial/Print Design' | 'Branding' |
 
 export interface ProcessStep {
   id: string;
-  image?: string; // Made optional to support text-only steps
+  image?: string; 
   title: string;
-  description: string;
+  description?: string; // Changed to optional
 }
 
 export interface Project {
@@ -15,7 +15,8 @@ export interface Project {
   description: string;
   longDescription: string;
   coverImage: string;
-  finalBannerImage?: string; // New optional property for a large end-of-project banner
+  finalBannerImage?: string; 
+  videoUrl?: string; 
   process: ProcessStep[];
   tools: string[];
   year: string;
@@ -23,6 +24,6 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  proficiency: number; // 0 to 100
+  proficiency: number; 
   category: 'Design' | 'Software' | 'Soft Skills';
 }

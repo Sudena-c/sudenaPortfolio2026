@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Project } from '../types';
+import { Project } from '../types.ts';
 import { ArrowUpRight } from 'lucide-react';
 
 interface ProjectCardProps {
