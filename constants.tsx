@@ -142,8 +142,15 @@ export const PROJECTS: Project[] = [
       {
         id: 'p4-2',
         title: 'Redesigning an existing Website',
-        image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=800&auto=format&fit=crop',
-        description: 'Analyzing existing layouts and improving user flow and hierarchy.'
+        image: 'https://i.ibb.co/Zpbzcyfq/Screenshot-2026-01-30-at-6-28-27-PM.png',
+        secondaryImage: 'https://i.ibb.co/mrSdZJVG/web-development.png',
+        description: 'Redesigned, through coding, an existing website- Nike.'
+      },
+      {
+        id: 'p3-logo-dev',
+        title: 'Logo Development',
+        image: 'https://i.ibb.co/TDnRYZcC/image.png',
+        secondaryImage: 'https://i.ibb.co/bjW7BYNs/image.png'
       },
       {
         id: 'p4-3',
