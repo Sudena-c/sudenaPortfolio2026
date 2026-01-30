@@ -17,8 +17,8 @@ export const PROJECTS: Project[] = [
     process: [
       {
         id: 'p1-intro',
-        title: 'The Daily Dilemma',
-        description: 'Every day, millions of people ask one small question: "What should I cook today?" That question sounds simple—but it creates stress, wasted food, and unhealthy choices.'
+        title: 'Every day, millions of people ask one small question: "What should I cook today?" That question sounds simple—but it creates stress, wasted food, and unhealthy choices.',
+        
       },
       {
         id: 'p1-1',
