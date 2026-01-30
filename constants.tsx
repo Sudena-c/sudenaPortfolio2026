@@ -147,16 +147,10 @@ export const PROJECTS: Project[] = [
         description: 'Redesigned, through coding, an existing website- Nike.'
       },
       {
-        id: 'p3-logo-dev',
-        title: 'Logo Development',
-        image: 'https://i.ibb.co/TDnRYZcC/image.png',
-        secondaryImage: 'https://i.ibb.co/bjW7BYNs/image.png'
-      },
-      {
         id: 'p4-3',
         title: 'Making my own Website',
-        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop',
-        description: 'Developing a custom-built portfolio from scratch to showcase my unique design perspective.'
+        image: 'https://i.ibb.co/VKxKj00/Screenshot-2026-01-30-at-6-34-39-PM.png',
+        description: 'Developing a custom-built portfolio from scratch to showcase my unique design perspective using coding and AI tools.'
       }
     ]
   },
