@@ -182,22 +182,22 @@ export const PROJECTS: Project[] = [
         description: 'Designing a Social Media campaign for the brand- to make people more aware and recognize the brand for its purposes.'
       },
       {
-        id: 'p5-2',
+        id: 'p5-4',
         title: 'Kitty Talk Tea Better',
         image: 'https://i.ibb.co/xqNdKYPN/Screenshot-2026-01-30-at-6-58-54-PM.png',
         description: 'Core Message: Make your next kitty party memorable and mindful. Swap the traditional chai for a cup of TEA BETTER—the healthier, tastier, and more Instagrammable choice that will get everyone talking. Target Platforms: Primarily Facebook and WhatsApp and Instagram, which are the most active platforms for this demographic. '
       },
       {
-        id: 'p5-2',
+        id: 'p5-5',
         title: 'Tea For Thought',
         image: 'https://i.ibb.co/35TFz5h7/Screenshot-2026-01-30-at-7-00-33-PM.png',
         description: 'Core Message: Position TEA BETTER not just as a beverage, but as a catalyst for creativity, deep thinking, and mindfulness. A healthy but tasty option for anyone/everyone, all age groups from college going students to adults and health concernced audience. Target Platforms: Instagram (primary), Snapchat (secondary, for younger audience and behind-the-scenes), potentially LinkedIn (for professional audience).'
       },
       {
-        id: 'p5-2',
-        title: 'Your Daily of Better',
+        id: 'p5-6',
+        title: 'Your Daily Dose of Better',
         image: 'https://i.ibb.co/6JYBDFc9/Screenshot-2026-01-30-at-7-00-50-PM.png',
-        description: 'Core Message: TEA BETTER isn't just a drink; it's a simple, delicious, and natural ritual for your daily well-being. Discover a blend that benefits you, from calming your mind to boosting your immunity. Target Platforms: Instagram (primary), Snapchat (secondary- individuals snap their life and what theyre drinking), and Facebook.'
+        description: 'Core Message: TEA BETTER isn\'t just a drink; it\'s a simple, delicious, and natural ritual for your daily well-being. Discover a blend that benefits you, from calming your mind to boosting your immunity. Target Platforms: Instagram (primary), Snapchat (secondary- individuals snap their life and what theyre drinking), and Facebook.'
       }
     ]
   },
