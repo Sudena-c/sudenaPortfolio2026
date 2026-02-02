@@ -233,7 +233,7 @@ export const INTERESTS: Project[] = [
     title: 'Aerial Silks & Movement',
     category: 'Creative Interests',
     description: 'Exploring identity through gravity-defying movement.',
-    longDescription: 'Dancing in the air is where I find my flow. Aerial Silks is not just a dance form for me; it is a discipline that requires core strength, mental focus, and a deep connection between the body and the fabric. It teaches me about structural balance and organic expression—concepts I carry into my design work.',
+    longDescription: 'Dancing in the air is where I find my flow. Aerial Silks is not just a dance form for me; it is a discipline that requires core strength, mental focus, and a deep connection between the body and the fabric. It is where I can take a break, I can relax but at the same time concentrate as well.',
     coverImage: 'https://i.ibb.co/tTh3XwyJ/Whats-App-Image-2026-02-02-at-19-57-05.jpg',
     year: 'Ongoing',
     tools: ['Movement', 'Strength', 'Aerial Fabric'],
