@@ -258,7 +258,7 @@ export const INTERESTS: Project[] = [
     longDescription: 'Sketching is my way of slowing down and truly observing. Whether it is a fleeting architectural detail or a quick gesture drawing, my notebooks are where I document my curiosities and experiment with lines without the constraints of a digital grid.',
     coverImage: 'https://i.ibb.co/VKxKj00/Screenshot-2026-01-30-at-6-34-39-PM.png',
     year: 'Ongoing',
-    tools: ['Ink', 'Graphite', 'Watercolors', 'Paper'],
+    tools: ['Ink', 'Graphite', 'Watercolors', 'Paper', 'Sketcbook' ],
     process: [
       {
         id: 'i2-gallery',
