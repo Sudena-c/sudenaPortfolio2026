@@ -234,7 +234,7 @@ export const INTERESTS: Project[] = [
     category: 'Creative Interests',
     description: 'Exploring identity through gravity-defying movement.',
     longDescription: 'Dancing in the air is where I find my flow. Aerial Silks is not just a dance form for me; it is a discipline that requires core strength, mental focus, and a deep connection between the body and the fabric. It teaches me about structural balance and organic expression—concepts I carry into my design work.',
-    coverImage: 'https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=800&auto=format&fit=crop',
+    coverImage: 'https://i.ibb.co/tTh3XwyJ/Whats-App-Image-2026-02-02-at-19-57-05.jpg',
     year: 'Ongoing',
     tools: ['Movement', 'Strength', 'Aerial Fabric'],
     process: [
@@ -242,9 +242,10 @@ export const INTERESTS: Project[] = [
         id: 'i1-gallery',
         title: '',
         gallery: [
-          'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=800&auto=format&fit=crop'
-        ]
+          'https://i.ibb.co/JNPXpSh/Whats-App-Image-2026-02-02-at-19-59-36.jpg',
+          'https://i.ibb.co/5hTMLvNB/Whats-App-Image-2026-02-02-at-19-57-51.jpg',
+          'https://i.ibb.co/Gf0cCpc2/Whats-App-Image-2026-02-02-at-19-59-36-1.jpg',
+          'https://i.ibb.co/gb29XJJP/Whats-App-Image-2026-02-02-at-19-59-36-2.jpg'
       }
     ]
   },
