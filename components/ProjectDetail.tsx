@@ -93,21 +93,29 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
         
         {project.process.map((step, index) => {
           // Layout Detection
-          const gallery = step.gallery || (step.secondaryImage ? [step.image!, step.secondaryImage] : null);
-          const noDescription = !step.description || step.description.trim() === "";
+          const gallery = step.gallery || (step.secondaryImage ? [step.image || '', step.secondaryImage] : null);
+          const hasDescription = step.description && step.description.trim() !== "";
+          const noDescription = !hasDescription;
           
-          // 1. Gallery Layout (multiple images, no description)
-          if (gallery && noDescription) {
-            const gridCols = gallery.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2';
+          // 1. Gallery Layout (multiple images)
+          if (gallery) {
+            // Determine grid columns: default to 3 if it's a large set (like the calendar), else 2
+            const gridCols = gallery.length > 3 ? 'md:grid-cols-3' : (gallery.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2');
+            
             return (
               <div key={step.id} className="space-y-12 animate-in fade-in duration-1000">
-                <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-center">{step.title}</h3>
+                {step.title && <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-center">{step.title}</h3>}
+                {hasDescription && (
+                  <p className={`text-lg leading-relaxed text-center max-w-3xl mx-auto ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
+                    {step.description}
+                  </p>
+                )}
                 <div className={`grid grid-cols-1 ${gridCols} gap-4`}>
                   {gallery.map((imgSrc, imgIdx) => (
                     <div 
                       key={`${step.id}-img-${imgIdx}`}
-                      className="rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-lg aspect-square"
-                      onClick={() => setSelectedImage({ src: imgSrc, alt: `${step.title} - Image ${imgIdx + 1}` })}
+                      className="rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-lg aspect-[3/4]"
+                      onClick={() => setSelectedImage({ src: imgSrc || '', alt: `${step.title} - Image ${imgIdx + 1}` })}
                     >
                       <img 
                         src={imgSrc} 
@@ -115,7 +123,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
                         className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" 
                       />
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom View</span>
+                        <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-xs">Zoom View</span>
                       </div>
                     </div>
                   ))}
@@ -132,7 +140,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
                 <h3 className="text-3xl md:text-5xl font-bold tracking-tight">{step.title}</h3>
                 <div 
                   className="rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-xl mx-auto max-w-4xl"
-                  onClick={() => setSelectedImage({ src: step.image!, alt: step.title })}
+                  onClick={() => setSelectedImage({ src: step.image || '', alt: step.title })}
                 >
                   <img 
                     src={step.image} 
@@ -147,32 +155,34 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
             );
           }
 
-          // 3. Standard Layout
+          // 3. Standard Layout (handles single image or gallery WITH description)
           return (
-            <div key={step.id} className={`grid grid-cols-1 items-center gap-12 ${
-              step.image ? 'md:grid-cols-2' : 'max-w-3xl mx-auto text-center'
-            } ${
-              step.image && index % 2 !== 0 ? 'md:flex-row-reverse' : ''
-            }`}>
-              <div className={step.image && index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}>
-                <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
-                {step.description && (
-                  <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
-                    {step.description}
-                  </p>
+            <div key={step.id} className="space-y-8">
+               <div className={`grid grid-cols-1 items-start gap-12 ${
+                step.image ? 'md:grid-cols-2' : 'max-w-3xl mx-auto text-center'
+              } ${
+                step.image && index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+              }`}>
+                <div className={step.image && index % 2 !== 0 ? 'md:order-2' : 'md:order-1 text-left'}>
+                  <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
+                  {step.description && (
+                    <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
+                      {step.description}
+                    </p>
+                  )}
+                </div>
+                {step.image && (
+                  <div 
+                    className={`rounded-xl overflow-hidden cursor-zoom-in group relative shadow-md ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}
+                    onClick={() => setSelectedImage({ src: step.image || '', alt: step.title })}
+                  >
+                    <img src={step.image} alt={step.title} className="w-full h-auto object-cover group-hover:scale-[1.05] transition-transform duration-1000" />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
+                    </div>
+                  </div>
                 )}
               </div>
-              {step.image && (
-                <div 
-                  className={`rounded-xl overflow-hidden cursor-zoom-in group relative ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}
-                  onClick={() => setSelectedImage({ src: step.image!, alt: step.title })}
-                >
-                  <img src={step.image} alt={step.title} className="w-full h-auto object-cover group-hover:scale-[1.05] transition-transform duration-1000" />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Zoom detail</span>
-                  </div>
-                </div>
-              )}
             </div>
           );
         })}
@@ -183,7 +193,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
             <h3 className="text-sm font-bold uppercase tracking-widest opacity-40 mb-8 text-center">Final Showcase</h3>
             <div 
               className="rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-2xl"
-              onClick={() => setSelectedImage({ src: project.finalBannerImage!, alt: 'Final Outcome' })}
+              onClick={() => setSelectedImage({ src: project.finalBannerImage || '', alt: 'Final Outcome' })}
             >
               <img 
                 src={project.finalBannerImage} 

@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
       {
         id: 'p2-3',
         title: 'The Book',
-        image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop',
+        image: 'https://i.ibb.co/kpV5gbD/cover-page.jpg',
         description: 'This was the final book, it focuses on some of the famour records also, along with how vinyl records are made in the first place.'
       }
     ]
@@ -83,7 +83,7 @@ export const PROJECTS: Project[] = [
     title: 'Rayve - Electric Car Brand',
     category: 'Branding',
     description: 'Visual identity for a forward-thinking EV startup.',
-    longDescription: 'RAYVE is a solar-powered electric vehicle brand designed for modern urban commuters who value sustainability without compromising on style or efficiency. The brand envisions everyday city travel and long travel hours where clean energy seamlessly supports mobility, reducing environmental impact while enhancing the driving experience. RAYVEs identity reflects conscious innovation—quiet, responsible, and forward-looking—built for individuals who want their daily choices to contribute to a cleaner future, with a special USP.',
+    longDescription: 'RAYVE is a solar-powered electric vehicle brand designed for modern urban commuters who value sustainability without compromising on style or efficiency. RAYVEs identity reflects conscious innovation—quiet, responsible, and forward-looking—built for individuals who want their daily choices to contribute to a cleaner future.',
     coverImage: 'https://i.ibb.co/DHRYgS77/Free-Billboard-Mockup-2nd-draft-blue-copy.jpg',
     year: '2023',
     tools: ['Adobe Illustrator', 'Photoshop', 'Figma'],
@@ -91,25 +91,13 @@ export const PROJECTS: Project[] = [
       {
         id: 'p3-brand',
         title: 'Brand: Mission, Vision, Values',
-        description: 'The brand aims to be a leading catalyst for sustainable and enjoyable urban mobility, empowering individuals to navigate their cities with ease and style. It focuses on designing, manufacturing, and delivering compact, smart electric vehicles that enhance urban life by offering a driving experience that is stylish, sustainable, and effortless. Guided by values of innovation, efficiency, independence, and tech-savvy thinking, the brand blends sustainability with modern design to create mobility solutions suited for contemporary city living.'
+        description: 'The brand aims to be a leading catalyst for sustainable and enjoyable urban mobility, empowering individuals to navigate their cities with ease and style.'
       },
       {
         id: 'p3-1',
         title: 'Logo Concept',
         image: 'https://i.ibb.co/chLsRy6z/image.png',
-        description: 'The RAYVE logo is a fluid and dynamic abstract mark, embodying the core essence of the brand. The sweeping, continuous teal form evokes a sense of motion and forward momentum, mirroring the effortless drive and modern design of RAYVE electric vehicles. Its graceful curves subtly hint at the harnessing of energy, like a wave drawing power, while the vibrant teal color signifies both clean energy and a refreshing, contemporary aesthetic.'
-      },
-      {
-        id: 'p3-logo-dev',
-        title: 'Logo Development',
-        image: 'https://i.ibb.co/TDnRYZcC/image.png',
-        secondaryImage: 'https://i.ibb.co/bjW7BYNs/image.png'
-      },
-      {
-        id: 'p3-2',
-        title: '3D design of the Showroom using the logo',
-        image: 'https://i.ibb.co/DHQCxgzQ/image.png',
-        description: 'Designed this 3D model of the showroom and how the logo can be placed in the space.'
+        description: 'The RAYVE logo is a fluid and dynamic abstract mark, embodying the core essence of the brand.'
       },
       {
         id: 'p3-mockups',
@@ -151,12 +139,6 @@ export const PROJECTS: Project[] = [
         title: 'Making my own Website',
         image: 'https://i.ibb.co/VKxKj00/Screenshot-2026-01-30-at-6-34-39-PM.png',
         description: 'Developing a custom-built portfolio from scratch to showcase my unique design perspective using coding and AI tools.'
-      },
-      {
-        id: 'p4-4',
-        title: 'Making my own Website- Coding',
-        image: 'https://i.ibb.co/jvfFWkZb/Screenshot-2026-02-02-at-10-38-15-AM.png',
-        description: 'Learnt how to use AI and code to make something of my own.'
       }
     ]
   },
@@ -180,30 +162,17 @@ export const PROJECTS: Project[] = [
         id: 'p5-2',
         title: 'Rebranding',
         image: 'https://i.ibb.co/v4hF73HL/Screenshot-2026-01-29-at-11-05-53-AM.png',
-        description: 'Refreshing the visual language to better align with the brands updated values and customer base.'
-      },
-      {
-        id: 'p5-3',
-        title: 'Social Media Campaign',
-        description: 'Designed a Social Media campaign for the brand- to make people more aware and recognize the brand for its purposes.'
+        description: 'Refreshing the visual language to better align with the brands updated values.'
       },
       {
         id: 'p5-4',
-        title: 'Kitty Talk Tea Better',
-        image: 'https://i.ibb.co/xqNdKYPN/Screenshot-2026-01-30-at-6-58-54-PM.png',
-        description: 'Core Message: Make your next kitty party memorable and mindful. Swap the traditional chai for a cup of TEA BETTER—the healthier, tastier, and more Instagrammable choice that will get everyone talking. Target Platforms: Primarily Facebook and WhatsApp and Instagram, which are the most active platforms for this demographic. '
-      },
-      {
-        id: 'p5-5',
-        title: 'Tea For Thought',
-        image: 'https://i.ibb.co/35TFz5h7/Screenshot-2026-01-30-at-7-00-33-PM.png',
-        description: 'Core Message: Position TEA BETTER not just as a beverage, but as a catalyst for creativity, deep thinking, and mindfulness. A healthy but tasty option for anyone/everyone, all age groups from college going students to adults and health concernced audience. Target Platforms: Instagram (primary), Snapchat (secondary, for younger audience and behind-the-scenes), potentially LinkedIn (for professional audience).'
-      },
-      {
-        id: 'p5-6',
-        title: 'Your Daily Dose of Better',
-        image: 'https://i.ibb.co/6JYBDFc9/Screenshot-2026-01-30-at-7-00-50-PM.png',
-        description: 'Core Message: TEA BETTER isn\'t just a drink; it\'s a simple, delicious, and natural ritual for your daily well-being. Discover a blend that benefits you, from calming your mind to boosting your immunity. Target Platforms: Instagram (primary), Snapchat (secondary- individuals snap their life and what theyre drinking), and Facebook.'
+        title: 'Social Media Campaign',
+        gallery: [
+          'https://i.ibb.co/xqNdKYPN/Screenshot-2026-01-30-at-6-58-54-PM.png',
+          'https://i.ibb.co/35TFz5h7/Screenshot-2026-01-30-at-7-00-33-PM.png',
+          'https://i.ibb.co/6JYBDFc9/Screenshot-2026-01-30-at-7-00-50-PM.png'
+        ],
+        description: 'Designing diverse campaign pillars: Kitty Talk, Tea For Thought, and Your Daily Dose of Better.'
       }
     ]
   },
@@ -220,8 +189,25 @@ export const PROJECTS: Project[] = [
       {
         id: 'p6-1',
         title: 'Concept & Calendar',
-        image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop',
-        description: 'Combining traditional geometric storytelling with modern calendar layouts.'
+        description: 'Combining traditional geometric storytelling with modern calendar layouts. Below is the full 12-month series.'
+      },
+      {
+        id: 'p6-gallery',
+        title: '12 Month Series',
+        gallery: [
+          'https://i.ibb.co/DPg8yPnd/jan.jpg',
+          'https://i.ibb.co/d0DykQgX/feb.jpg',
+          'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1515405299443-fbd3b75a1984?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1554188248-986adbb73be4?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1579783922514-023a9a7c44bb?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1561214115-f2f134cc4912?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=800&auto=format&fit=crop'
+        ]
       }
     ]
   }
