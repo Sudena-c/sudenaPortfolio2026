@@ -197,16 +197,16 @@ export const PROJECTS: Project[] = [
         gallery: [
           'https://i.ibb.co/DPg8yPnd/jan.jpg',
           'https://i.ibb.co/d0DykQgX/feb.jpg',
-          'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1515405299443-fbd3b75a1984?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1554188248-986adbb73be4?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1579783922514-023a9a7c44bb?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1561214115-f2f134cc4912?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=800&auto=format&fit=crop'
+          'https://i.ibb.co/mFhJLz6F/march.jpg',
+          'https://i.ibb.co/XrP8Yr9c/april.jpg',
+          'https://i.ibb.co/PdK5s4V/may.jpg',
+          'https://i.ibb.co/8nJnhQFn/june.jpg',
+          'https://i.ibb.co/d4xjfP4X/july.jpg',
+          'https://i.ibb.co/PGRGZw86/august.jpg',
+          'https://i.ibb.co/twM5FHvY/sep.jpg',
+          'https://i.ibb.co/0RBn5LS7/oct.jpg',
+          'https://i.ibb.co/zhj1NHSB/nov.jpg',
+          'https://i.ibb.co/mrmgk1jG/dec.jpg'
         ]
       }
     ]
