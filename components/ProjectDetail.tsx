@@ -12,6 +12,7 @@ interface ProjectDetailProps {
 
 const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMode }) => {
   const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
+  const isInterest = project.category === 'Creative Interests';
 
   return (
     <div className="animate-in fade-in slide-in-from-right-8 duration-700">
@@ -77,40 +78,47 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
       </div>
 
       {/* Cover Image */}
-      <div 
-        className="rounded-2xl overflow-hidden mb-24 aspect-[21/9] cursor-zoom-in group relative max-w-6xl mx-auto"
-        onClick={() => setSelectedImage({ src: project.coverImage, alt: project.title })}
-      >
-        <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700" />
-        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-          <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Click to expand</span>
+      {!isInterest && (
+        <div 
+          className="rounded-2xl overflow-hidden mb-24 aspect-[21/9] cursor-zoom-in group relative max-w-6xl mx-auto"
+          onClick={() => setSelectedImage({ src: project.coverImage, alt: project.title })}
+        >
+          <img src={project.coverImage} alt={project.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+          <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-medium px-4 py-2 bg-black/40 backdrop-blur-md rounded-full text-sm">Click to expand</span>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Process Section */}
       <div className="max-w-5xl mx-auto space-y-48">
-        <h2 className="text-4xl font-bold text-center mb-24 underline underline-offset-8 decoration-neutral-800">Process & Development</h2>
+        {!isInterest && (
+          <h2 className="text-4xl font-bold text-center mb-24 underline underline-offset-8 decoration-neutral-800">Process & Development</h2>
+        )}
         
         {project.process.map((step) => {
           const gallery = step.gallery;
+          const hasTitle = step.title && step.title.trim() !== "";
           const hasDescription = step.description && step.description.trim() !== "";
           
           return (
             <div key={step.id} className="space-y-12 animate-in fade-in duration-1000">
-              {/* Title and Description - Always Central */}
-              <div className="text-center max-w-3xl mx-auto space-y-6">
-                {step.title && <h3 className="text-3xl md:text-5xl font-bold tracking-tight">{step.title}</h3>}
-                {hasDescription && (
-                  <p className={`text-xl leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
-                    {step.description}
-                  </p>
-                )}
-              </div>
+              {/* Title and Description - Only if not a simplified Interest or if specifically provided */}
+              {(hasTitle || hasDescription) && (
+                <div className="text-center max-w-3xl mx-auto space-y-6">
+                  {hasTitle && <h3 className="text-3xl md:text-5xl font-bold tracking-tight">{step.title}</h3>}
+                  {hasDescription && (
+                    <p className={`text-xl leading-relaxed ${isDarkMode ? 'text-neutral-400' : 'text-neutral-600'}`}>
+                      {step.description}
+                    </p>
+                  )}
+                </div>
+              )}
 
               {/* Media Content - Always Central and Below Text */}
               {gallery ? (
-                /* Gallery View (e.g. Calendar) */
-                <div className={`grid grid-cols-1 ${gallery.length >= 12 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-8`}>
+                /* Gallery View */
+                <div className={`grid grid-cols-1 ${gallery.length >= 12 ? 'md:grid-cols-3' : (gallery.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2')} gap-8`}>
                   {gallery.map((imgSrc, imgIdx) => (
                     <div 
                       key={`${step.id}-img-${imgIdx}`}
@@ -119,7 +127,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
                     >
                       <img 
                         src={imgSrc} 
-                        alt={step.title || 'Process Image'} 
+                        alt={step.title || 'Visual Asset'} 
                         className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" 
                       />
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -148,8 +156,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
           );
         })}
 
-        {/* Optional Final Banner Image */}
-        {project.finalBannerImage && (
+        {/* Optional Final Banner Image (Hide for interests unless needed) */}
+        {!isInterest && project.finalBannerImage && (
           <div className="pt-8 text-center">
             <h3 className="text-sm font-bold uppercase tracking-widest opacity-40 mb-12">Final Showcase</h3>
             <div 

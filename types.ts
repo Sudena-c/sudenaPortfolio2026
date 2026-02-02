@@ -1,11 +1,11 @@
 
-export type Category = 'All' | 'UI/UX' | 'Editorial/Print Design' | 'Branding' | 'Web Development' | 'Digital Marketing' | 'Illustration';
+export type Category = 'All' | 'UI/UX' | 'Editorial/Print Design' | 'Branding' | 'Web Development' | 'Digital Marketing' | 'Illustration' | 'Creative Interests';
 
 export interface ProcessStep {
   id: string;
   image?: string; 
-  secondaryImage?: string; // Kept for backward compatibility
-  gallery?: string[]; // New field for 3+ images
+  secondaryImage?: string; 
+  gallery?: string[]; 
   title: string;
   description?: string;
 }

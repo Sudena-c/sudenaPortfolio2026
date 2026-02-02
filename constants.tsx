@@ -1,7 +1,7 @@
 
 import { Project, Category } from './types.ts';
 
-export const CATEGORIES: Category[] = ['All', 'UI/UX', 'Editorial/Print Design', 'Branding', 'Web Development', 'Digital Marketing', 'Illustration'];
+export const CATEGORIES: Category[] = ['All', 'UI/UX', 'Editorial/Print Design', 'Branding', 'Web Development', 'Digital Marketing', 'Illustration', 'Creative Interests'];
 
 export const PROJECTS: Project[] = [
   {
@@ -94,10 +94,16 @@ export const PROJECTS: Project[] = [
         description: 'The brand aims to be a leading catalyst for sustainable and enjoyable urban mobility, empowering individuals to navigate their cities with ease and style.'
       },
       {
+        id: 'p3-logo-dev',
+        title: 'Logo Development',
+        image: 'https://i.ibb.co/Zpbzcyfq/Screenshot-2026-01-30-at-6-28-27-PM.png',
+        description: 'The iterative process focused on capturing the energy of solar light. Early sketches explored geometric rays merging with fluid movement, leading to a mark that feels both solid and dynamic.'
+      },
+      {
         id: 'p3-1',
         title: 'Logo Concept',
         image: 'https://i.ibb.co/chLsRy6z/image.png',
-        description: 'The RAYVE logo is a fluid and dynamic abstract mark, embodying the core essence of the brand.'
+        description: 'The final RAYVE logo is a fluid and dynamic abstract mark, embodying the core essence of the brand.'
       },
       {
         id: 'p3-mockups',
@@ -168,19 +174,19 @@ export const PROJECTS: Project[] = [
         id: 'p5-3',
         title: 'Campaign Pillar: Kitty Talk Tea Better',
         image: 'https://i.ibb.co/xqNdKYPN/Screenshot-2026-01-30-at-6-58-54-PM.png',
-        description: 'Core Message: Make your next kitty party memorable and mindful. Swap the traditional chai for a cup of TEA BETTER—the healthier, tastier, and more Instagrammable choice that will get everyone talking. Target Platforms: Primarily Facebook and WhatsApp and Instagram, which are the most active platforms for this demographic.'
+        description: 'Core Message: Make your next kitty party memorable and mindful. Swap the traditional chai for a cup of TEA BETTER—the healthier, tastier, and more Instagrammable choice that will get everyone talking.'
       },
       {
         id: 'p5-4',
         title: 'Campaign Pillar: Tea For Thought',
         image: 'https://i.ibb.co/35TFz5h7/Screenshot-2026-01-30-at-7-00-33-PM.png',
-        description: 'Core Message: Position TEA BETTER not just as a beverage, but as a catalyst for creativity, deep thinking, and mindfulness. A healthy but tasty option for anyone/everyone, all age groups from college going students to adults and health concernced audience. Target Platforms: Instagram (primary), Snapchat (secondary, for younger audience and behind-the-scenes), potentially LinkedIn (for professional audience). '
+        description: 'Core Message: Position TEA BETTER not just as a beverage, but as a catalyst for creativity, deep thinking, and mindfulness.'
       },
       {
         id: 'p5-5',
         title: 'Campaign Pillar: Your Daily Dose of Better',
         image: 'https://i.ibb.co/6JYBDFc9/Screenshot-2026-01-30-at-7-00-50-PM.png',
-        description: 'Core Message: TEA BETTER isnt just a drink; its a simple, delicious, and natural ritual for your daily well-being. Discover a blend that benefits you, from calming your mind to boosting your immunity. Target Platforms: Instagram (primary), Snapchat (secondary- individuals snap their life and what they’re drinking), and Facebook.'
+        description: 'Core Message: TEA BETTER isnt just a drink; its a simple, delicious, and natural ritual for your daily well-being.'
       }
     ]
   },
@@ -215,6 +221,72 @@ export const PROJECTS: Project[] = [
           'https://i.ibb.co/0RBn5LS7/oct.jpg',
           'https://i.ibb.co/zhj1NHSB/nov.jpg',
           'https://i.ibb.co/mrmgk1jG/dec.jpg'
+        ]
+      }
+    ]
+  }
+];
+
+export const INTERESTS: Project[] = [
+  {
+    id: 'interest-1',
+    title: 'Aerial Silks & Movement',
+    category: 'Creative Interests',
+    description: 'Exploring identity through gravity-defying movement.',
+    longDescription: 'Dancing in the air is where I find my flow. Aerial Silks is not just a dance form for me; it is a discipline that requires core strength, mental focus, and a deep connection between the body and the fabric. It teaches me about structural balance and organic expression—concepts I carry into my design work.',
+    coverImage: 'https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=800&auto=format&fit=crop',
+    year: 'Ongoing',
+    tools: ['Movement', 'Strength', 'Aerial Fabric'],
+    process: [
+      {
+        id: 'i1-gallery',
+        title: '',
+        gallery: [
+          'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=800&auto=format&fit=crop'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'interest-2',
+    title: 'Visual Journals & Sketches',
+    category: 'Creative Interests',
+    description: 'Analog explorations of the world around me.',
+    longDescription: 'Sketching is my way of slowing down and truly observing. Whether it is a fleeting architectural detail or a quick gesture drawing, my notebooks are where I document my curiosities and experiment with lines without the constraints of a digital grid.',
+    coverImage: 'https://i.ibb.co/VKxKj00/Screenshot-2026-01-30-at-6-34-39-PM.png',
+    year: 'Ongoing',
+    tools: ['Ink', 'Graphite', 'Watercolors', 'Paper'],
+    process: [
+      {
+        id: 'i2-gallery',
+        title: '',
+        gallery: [
+          'https://images.unsplash.com/photo-1544273677-c433136021d4?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1580136579312-94651dfd596d?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1541689592655-f5f52825a3b8?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'interest-3',
+    title: 'Photography',
+    category: 'Creative Interests',
+    description: 'Capturing moments and framing perspectives.',
+    longDescription: 'Photography allows me to explore composition and light in its purest form. It is through the lens that I learn to see the beauty in the mundane and the stories hidden in the details of the everyday world.',
+    coverImage: 'https://images.unsplash.com/photo-1502982722823-b921f447bdb3?q=80&w=800&auto=format&fit=crop',
+    year: 'Ongoing',
+    tools: ['Digital', 'Film', 'Composition'],
+    process: [
+      {
+        id: 'i3-gallery',
+        title: '',
+        gallery: [
+          'https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=800&auto=format&fit=crop'
         ]
       }
     ]
