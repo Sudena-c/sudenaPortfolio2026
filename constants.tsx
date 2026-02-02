@@ -151,7 +151,7 @@ export const PROJECTS: Project[] = [
         title: 'Making my own Website',
         image: 'https://i.ibb.co/VKxKj00/Screenshot-2026-01-30-at-6-34-39-PM.png',
         description: 'Developing a custom-built portfolio from scratch to showcase my unique design perspective using coding and AI tools.'
-      }
+      },
       {
         id: 'p4-4',
         title: 'Making my own Website- Coding',
