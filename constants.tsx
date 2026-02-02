@@ -152,6 +152,12 @@ export const PROJECTS: Project[] = [
         image: 'https://i.ibb.co/VKxKj00/Screenshot-2026-01-30-at-6-34-39-PM.png',
         description: 'Developing a custom-built portfolio from scratch to showcase my unique design perspective using coding and AI tools.'
       }
+      {
+        id: 'p4-4',
+        title: 'Making my own Website- Coding',
+        image: 'https://i.ibb.co/jvfFWkZb/Screenshot-2026-02-02-at-10-38-15-AM.png',
+        description: 'Learnt how to use AI and code to make something of my own.'
+      }
     ]
   },
   {
@@ -179,7 +185,7 @@ export const PROJECTS: Project[] = [
       {
         id: 'p5-3',
         title: 'Social Media Campaign',
-        description: 'Designing a Social Media campaign for the brand- to make people more aware and recognize the brand for its purposes.'
+        description: 'Designed a Social Media campaign for the brand- to make people more aware and recognize the brand for its purposes.'
       },
       {
         id: 'p5-4',

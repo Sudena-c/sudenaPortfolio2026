@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, onToggleTheme, onHomeClick,
               <span>Back</span>
             </button>
           ) : (
-            <h1 className="text-xl font-bold tracking-tighter">SUDENA</h1>
+            <h1 className="text-xl font-bold tracking-tighter">SUDENA CHANDNANI</h1>
           )}
         </div>
 
