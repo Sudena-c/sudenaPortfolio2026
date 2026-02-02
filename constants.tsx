@@ -156,23 +156,31 @@ export const PROJECTS: Project[] = [
         id: 'p5-1',
         title: 'Research',
         image: 'https://i.ibb.co/gZFxTsY1/Screenshot-2026-01-30-at-7-09-12-PM.png',
-        description: 'Understanding the brands stand in the market and the brand itself.'
+        description: 'Understanding the brands stand in the market and the brand itself. Understanding the brands customers, products, the philosophy and relevance.'
       },
       {
         id: 'p5-2',
         title: 'Rebranding',
         image: 'https://i.ibb.co/v4hF73HL/Screenshot-2026-01-29-at-11-05-53-AM.png',
-        description: 'Refreshing the visual language to better align with the brands updated values.'
+        description: 'Refreshing the visual language to better align with the brands updated values, their customers and how the brand is potrayed. '
+      },
+      {
+        id: 'p5-3',
+        title: 'Campaign Pillar: Kitty Talk Tea Better',
+        image: 'https://i.ibb.co/xqNdKYPN/Screenshot-2026-01-30-at-6-58-54-PM.png',
+        description: 'Core Message: Make your next kitty party memorable and mindful. Swap the traditional chai for a cup of TEA BETTER—the healthier, tastier, and more Instagrammable choice that will get everyone talking. Target Platforms: Primarily Facebook and WhatsApp and Instagram, which are the most active platforms for this demographic.'
       },
       {
         id: 'p5-4',
-        title: 'Social Media Campaign',
-        gallery: [
-          'https://i.ibb.co/xqNdKYPN/Screenshot-2026-01-30-at-6-58-54-PM.png',
-          'https://i.ibb.co/35TFz5h7/Screenshot-2026-01-30-at-7-00-33-PM.png',
-          'https://i.ibb.co/6JYBDFc9/Screenshot-2026-01-30-at-7-00-50-PM.png'
-        ],
-        description: 'Designing diverse campaign pillars: Kitty Talk, Tea For Thought, and Your Daily Dose of Better.'
+        title: 'Campaign Pillar: Tea For Thought',
+        image: 'https://i.ibb.co/35TFz5h7/Screenshot-2026-01-30-at-7-00-33-PM.png',
+        description: 'Core Message: Position TEA BETTER not just as a beverage, but as a catalyst for creativity, deep thinking, and mindfulness. A healthy but tasty option for anyone/everyone, all age groups from college going students to adults and health concernced audience. Target Platforms: Instagram (primary), Snapchat (secondary, for younger audience and behind-the-scenes), potentially LinkedIn (for professional audience). '
+      },
+      {
+        id: 'p5-5',
+        title: 'Campaign Pillar: Your Daily Dose of Better',
+        image: 'https://i.ibb.co/6JYBDFc9/Screenshot-2026-01-30-at-7-00-50-PM.png',
+        description: 'Core Message: TEA BETTER isnt just a drink; its a simple, delicious, and natural ritual for your daily well-being. Discover a blend that benefits you, from calming your mind to boosting your immunity. Target Platforms: Instagram (primary), Snapchat (secondary- individuals snap their life and what they’re drinking), and Facebook.'
       }
     ]
   },
@@ -193,7 +201,7 @@ export const PROJECTS: Project[] = [
       },
       {
         id: 'p6-gallery',
-        title: '12 Month Series',
+        title: '',
         gallery: [
           'https://i.ibb.co/DPg8yPnd/jan.jpg',
           'https://i.ibb.co/d0DykQgX/feb.jpg',
