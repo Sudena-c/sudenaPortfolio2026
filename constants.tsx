@@ -256,7 +256,7 @@ export const INTERESTS: Project[] = [
     category: 'Creative Interests',
     description: 'Analog explorations of the world around me.',
     longDescription: 'Sketching is my way of slowing down and truly observing. Whether it is a fleeting architectural detail or a quick gesture drawing, my notebooks are where I document my curiosities and experiment with lines without the constraints of a digital grid.',
-    coverImage: 'https://i.ibb.co/VKxKj00/Screenshot-2026-01-30-at-6-34-39-PM.png',
+    coverImage: 'https://i.ibb.co/Kjv6hk0X/facade-sketch-clear-transparent.png',
     year: 'Ongoing',
     tools: ['Ink', 'Graphite', 'Watercolors', 'Paper', 'Sketcbook' ],
     process: [
@@ -264,9 +264,9 @@ export const INTERESTS: Project[] = [
         id: 'i2-gallery',
         title: '',
         gallery: [
-          'https://i.ibb.co/32JQfbj/sketch-4.png',
-          'https://i.ibb.co/W47FRC0v/building-sketch-TRANSPARENT.png',
-          'https://i.ibb.co/HfZZyFw2/sketch-2.png',
+          'https://i.ibb.co/jP3h61QF/sketch-4-clear-transparent.png',
+          'https://i.ibb.co/MDcG6BDX/sketch-3-clear-transparent.png',
+          'https://i.ibb.co/gLTPb4Bg/sketch-2-clear-transparent.png',
           'https://i.ibb.co/359tsKX3/sketch-3.png'
         ]
       }
