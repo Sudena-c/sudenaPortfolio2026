@@ -264,9 +264,9 @@ export const INTERESTS: Project[] = [
         id: 'i2-gallery',
         title: '',
         gallery: [
-          'https://i.ibb.co/jP3h61QF/sketch-4-clear-transparent.png',
-          'https://i.ibb.co/MDcG6BDX/sketch-3-clear-transparent.png',
-          'https://i.ibb.co/gLTPb4Bg/sketch-2-clear-transparent.png',
+          'https://i.ibb.co/gLMp4N8P/vertical-building-white-background-soft-MATCHED.png',
+          'https://i.ibb.co/kg0ZSxNL/street-sketch-white-background.png',
+          'https://i.ibb.co/qFX99r5V/building-white-background-soft-MATCHED.png',
           'https://i.ibb.co/359tsKX3/sketch-3.png'
         ]
       }
