@@ -256,7 +256,7 @@ export const INTERESTS: Project[] = [
     category: 'Creative Interests',
     description: 'Analog explorations of the world around me.',
     longDescription: 'Sketching is my way of slowing down and truly observing. Whether it is a fleeting architectural detail or a quick gesture drawing, my notebooks are where I document my curiosities and experiment with lines without the constraints of a digital grid.',
-    coverImage: 'https://i.ibb.co/Kjv6hk0X/facade-sketch-clear-transparent.png',
+    coverImage: 'https://i.ibb.co/whzp4x8V/Chat-GPT-Image-Jan-29-2026-04-36-14-PM.png',
     year: 'Ongoing',
     tools: ['Ink', 'Graphite', 'Watercolors', 'Paper', 'Sketcbook' ],
     process: [
