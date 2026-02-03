@@ -264,8 +264,8 @@ export const INTERESTS: Project[] = [
         id: 'i2-gallery',
         title: '',
         gallery: [
-          'https://images.unsplash.com/photo-1544273677-c433136021d4?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1580136579312-94651dfd596d?q=80&w=800&auto=format&fit=crop',
+          'https://i.ibb.co/Hpk0CMXw/Chat-GPT-Image-Jan-29-2026-04-44-15-PM.png',
+          'https://i.ibb.co/W47FRC0v/building-sketch-TRANSPARENT.png',
           'https://images.unsplash.com/photo-1541689592655-f5f52825a3b8?q=80&w=800&auto=format&fit=crop',
           'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop'
         ]
