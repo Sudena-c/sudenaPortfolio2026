@@ -77,7 +77,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
         </div>
       </div>
 
-      {/* Cover Image */}
+      {/* Cover Image - Hide for interests to jump straight to curated visuals */}
       {!isInterest && (
         <div 
           className="rounded-2xl overflow-hidden mb-24 aspect-[21/9] cursor-zoom-in group relative max-w-6xl mx-auto"
@@ -98,12 +98,12 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
         
         {project.process.map((step) => {
           const gallery = step.gallery;
-          const hasTitle = step.title && step.title.trim() !== "";
-          const hasDescription = step.description && step.description.trim() !== "";
+          const hasTitle = !isInterest && step.title && step.title.trim() !== "";
+          const hasDescription = !isInterest && step.description && step.description.trim() !== "";
           
           return (
             <div key={step.id} className="space-y-12 animate-in fade-in duration-1000">
-              {/* Title and Description - Only if not a simplified Interest or if specifically provided */}
+              {/* Title and Description - Suppressed for Creative Interests */}
               {(hasTitle || hasDescription) && (
                 <div className="text-center max-w-3xl mx-auto space-y-6">
                   {hasTitle && <h3 className="text-3xl md:text-5xl font-bold tracking-tight">{step.title}</h3>}
@@ -115,7 +115,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
                 </div>
               )}
 
-              {/* Media Content - Always Central and Below Text */}
+              {/* Media Content - Always Central */}
               {gallery ? (
                 /* Gallery View */
                 <div className={`grid grid-cols-1 ${gallery.length >= 12 ? 'md:grid-cols-3' : (gallery.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2')} gap-8`}>
@@ -123,11 +123,11 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
                     <div 
                       key={`${step.id}-img-${imgIdx}`}
                       className="rounded-2xl overflow-hidden cursor-zoom-in group relative shadow-lg aspect-[3/4]"
-                      onClick={() => setSelectedImage({ src: imgSrc || '', alt: `${step.title || 'Visual'} ${imgIdx + 1}` })}
+                      onClick={() => setSelectedImage({ src: imgSrc || '', alt: `${project.title} Visual ${imgIdx + 1}` })}
                     >
                       <img 
                         src={imgSrc} 
-                        alt={step.title || 'Visual Asset'} 
+                        alt={`${project.title} Visual Asset`} 
                         className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" 
                       />
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -156,7 +156,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, isDarkMo
           );
         })}
 
-        {/* Optional Final Banner Image (Hide for interests unless needed) */}
+        {/* Optional Final Banner Image (Hide for interests) */}
         {!isInterest && project.finalBannerImage && (
           <div className="pt-8 text-center">
             <h3 className="text-sm font-bold uppercase tracking-widest opacity-40 mb-12">Final Showcase</h3>

@@ -59,14 +59,14 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
               </p>
             </div>
           </div>
-          <div className="order-1 md:order-2">
-            <div className={`aspect-square rounded-2xl overflow-hidden bg-neutral-200 ${isDarkMode ? 'bg-neutral-900' : 'bg-neutral-100'}`}>
+          <div className="order-1 md:order-2 flex justify-center">
+            <div className={`aspect-square w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 shadow-xl bg-neutral-200 ${isDarkMode ? 'bg-neutral-900 border-neutral-800' : 'bg-neutral-100 border-white'}`}>
               <img 
-                src="https://i.ibb.co/SXybJnG2/Sudena.jpg" 
+                src="https://i.ibb.co/NdWK4w4P/Whats-App-Image-2026-02-03-at-12-48-07.jpg" 
                 alt="Sudena" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop";
+                  (e.target as HTMLImageElement).src = "https://i.ibb.co/SXybJnG2/Sudena.jpg";
                 }}
               />
             </div>
