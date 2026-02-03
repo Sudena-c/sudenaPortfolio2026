@@ -242,10 +242,9 @@ export const INTERESTS: Project[] = [
         id: 'i1-gallery',
         title: '',
         gallery: [
-          'https://i.ibb.co/JNPXpSh/Whats-App-Image-2026-02-02-at-19-59-36.jpg',
           'https://i.ibb.co/5hTMLvNB/Whats-App-Image-2026-02-02-at-19-57-51.jpg',
-          'https://i.ibb.co/Gf0cCpc2/Whats-App-Image-2026-02-02-at-19-59-36-1.jpg',
-          'https://i.ibb.co/gb29XJJP/Whats-App-Image-2026-02-02-at-19-59-36-2.jpg'
+          'https://i.ibb.co/gb29XJJP/Whats-App-Image-2026-02-02-at-19-59-36-2.jpg',
+          'https://i.ibb.co/Gf0cCpc2/Whats-App-Image-2026-02-02-at-19-59-36-1.jpg'
           ]
       }
     ]
