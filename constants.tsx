@@ -290,7 +290,6 @@ export const INTERESTS: Project[] = [
           'https://i.ibb.co/rGvgqTTx/Whats-App-Image-2026-02-03-at-20-22-56.jpg',
           'https://i.ibb.co/75DDPZH/DSC08094.jpg'
         ]
-        ]
       }
     ]
   }
