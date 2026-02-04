@@ -277,7 +277,7 @@ export const INTERESTS: Project[] = [
     category: 'Creative Interests',
     description: 'Capturing moments and framing perspectives.',
     longDescription: 'Photography allows me to explore composition and light in its purest form. It is through the lens that I learn to see the beauty in the mundane and the stories hidden in the details of the everyday world.',
-    coverImage: 'https://images.unsplash.com/photo-1502982722823-b921f447bdb3?q=80&w=800&auto=format&fit=crop',
+    coverImage: 'https://i.ibb.co/75DDPZH/DSC08094.jpg',
     year: 'Ongoing',
     tools: ['Digital', 'Film', 'Composition'],
     process: [
@@ -287,8 +287,7 @@ export const INTERESTS: Project[] = [
         gallery: [
           'https://i.ibb.co/jvd0mF4B/Whats-App-Image-2026-02-03-at-20-22-57-1.jpg',
           'https://i.ibb.co/tpwpSK69/Whats-App-Image-2026-02-03-at-20-22-57.jpg',
-          'https://i.ibb.co/rGvgqTTx/Whats-App-Image-2026-02-03-at-20-22-56.jpg',
-          'https://i.ibb.co/75DDPZH/DSC08094.jpg'
+          'https://i.ibb.co/rGvgqTTx/Whats-App-Image-2026-02-03-at-20-22-56.jpg'
         ]
       }
     ]
