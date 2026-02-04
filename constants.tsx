@@ -285,9 +285,11 @@ export const INTERESTS: Project[] = [
         id: 'i3-gallery',
         title: '',
         gallery: [
-          'https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=800&auto=format&fit=crop'
+          'https://i.ibb.co/jvd0mF4B/Whats-App-Image-2026-02-03-at-20-22-57-1.jpg',
+          'https://i.ibb.co/tpwpSK69/Whats-App-Image-2026-02-03-at-20-22-57.jpg',
+          'https://i.ibb.co/rGvgqTTx/Whats-App-Image-2026-02-03-at-20-22-56.jpg',
+          'https://i.ibb.co/75DDPZH/DSC08094.jpg'
+        ]
         ]
       }
     ]
