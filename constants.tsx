@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
     category: 'UI/UX',
     description: 'A collaborative meal-planning platform for shared households.',
     longDescription: 'MealMate is a collaborative meal-planning platform designed for people sharing a household. Users create individual profiles by adding food preferences, dietary choices, and commonly available groceries at home. Based on this information, the platform suggests daily meal options that align with both household inventory and collective preferences.',
-    coverImage: 'https://i.ibb.co/PzMM3J9q/all-screens-copy-1.jpg',
+    coverImage: 'https://i.ibb.co/hJjC4PFV/Screenshot-2026-02-06-at-12-28-27-PM.png',
     finalBannerImage: 'https://i.ibb.co/vx9dxxy5/Screenshot-2026-01-29-at-10-40-52-AM.png',
     year: '2025',
     tools: ['Figma'],
@@ -288,6 +288,48 @@ export const INTERESTS: Project[] = [
           'https://i.ibb.co/jvd0mF4B/Whats-App-Image-2026-02-03-at-20-22-57-1.jpg',
           'https://i.ibb.co/tpwpSK69/Whats-App-Image-2026-02-03-at-20-22-57.jpg',
           'https://i.ibb.co/rGvgqTTx/Whats-App-Image-2026-02-03-at-20-22-56.jpg'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'interest-4',
+    title: 'Culinary Arts',
+    category: 'Creative Interests',
+    description: 'The art of blending flavors and techniques.',
+    longDescription: 'For me, cooking is a form of chemistry and art combined. It is about understanding how different ingredients interact to create a cohesive experience. It is a meditative practice that ends with something shared and enjoyed.',
+    coverImage: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop',
+    year: 'Ongoing',
+    tools: ['Culinary Tech', 'Plating', 'Experimentation'],
+    process: [
+      {
+        id: 'i4-gallery',
+        title: '',
+        gallery: [
+          'https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'interest-5',
+    title: 'Fine Art & Painting',
+    category: 'Creative Interests',
+    description: 'Expressive color and form on canvas.',
+    longDescription: 'Painting allows for a level of abstraction that digital design sometimes lacks. It is tactile, messy, and deeply personal. I use it as a way to explore color theory and composition in an unconstrained environment.',
+    coverImage: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=800&auto=format&fit=crop',
+    year: 'Ongoing',
+    tools: ['Acrylics', 'Canvas', 'Composition'],
+    process: [
+      {
+        id: 'i5-gallery',
+        title: '',
+        gallery: [
+          'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1460661419201-fd4ce18a802f?q=80&w=800&auto=format&fit=crop'
         ]
       }
     ]

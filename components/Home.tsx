@@ -119,7 +119,7 @@ const Home: React.FC<HomeProps> = ({ projects, onProjectClick, isDarkMode }) => 
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 w-full max-w-[95rem] px-4 md:px-0">
             {INTERESTS.map((interest) => (
               <ProjectCard 
                 key={interest.id} 
